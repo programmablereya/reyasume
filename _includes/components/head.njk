@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ metadata.title }}</title>
+  <meta name="description" content="{{ metadata.description }}" />
+
+  {% include "components/favicon.njk" %}
+  {% include "components/card.njk" %}
+  {% include "components/twitter-card.njk" %}
+
+  {% set css %}
+    {% include "assets/css/main.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+
+  {% set js %}
+    {% include "assets/js/main.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+</head>
