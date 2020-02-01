@@ -1,0 +1,16 @@
+{# Uses page variable: filter.skills #}
+{# Uses data store: skills.categories #}
+{% set skillFilter = filter.skills if filter and filter.skills else "all" %}
+{% set skillCategoriesFiltered = skills.categories | identifyHighlightsRecursive(skillFilter, "skills") %}
+
+<div class="highlight-container">
+  <div class="section-header">
+    <h2>Skills</h2>
+    {% if skillCategoriesFiltered | hasLowlightsRecursive("skills") %}
+      {% include "components/resume/highlight-icon.njk" %}
+    {% endif %}
+  </div>
+  {% for category in skillCategoriesFiltered %}
+    {% include "components/resume/skill-subcategory.njk" %}
+  {% endfor %}
+</div>

@@ -1,0 +1,109 @@
+@media only screen {
+  body {
+    background-color: #5e5e5e;
+    margin: 0;
+  }
+
+  main {
+    padding: 0 72px 72px 72px;
+    background-color: white;
+    margin: 0;
+    border: 1px solid gray;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  footer {
+    display: block;
+    font-size: smaller;
+    color: white;
+    padding: 10px;
+		text-shadow: black 1px 1px 1px, black -1px 1px 1px, black 1px -1px 1px, black -1px -1px 1px;
+  }
+
+  footer a:link, footer a:visited {
+    color: #4ec6f5;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  footer a:hover, footer a:focus {
+    color: #87deff;
+  }
+
+  footer a:active {
+    color: #3d86fc;
+  }
+
+  header .buttons {
+    order: 1;
+    width: 40%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  header .buttons * {
+    background-color: transparent;
+    background-size: contain;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    flex: 1 0 0;
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  header .buttons #print {
+    flex: 5 0 0;
+  }
+
+  header .buttons .show-highlights, header .buttons .show-all {
+    flex: 10 0 0;
+  }
+
+  .show-all, .show-highlights, #print {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.05) 80%, transparent 100%);
+    cursor: pointer;
+    line-height: 2;
+  }
+
+  .show-all:hover, .show-highlights:hover, #print:hover,
+  .show-all:focus, .show-highlights:focus, #print:focus {
+    background-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 100, 0.1) 20%, rgba(0, 0, 100, 0.2) 30%, rgba(0, 0, 100, 0.2) 70%, rgba(0, 0, 100, 0.1) 80%, transparent 100%);
+  }
+
+  .show-all:active, .show-highlights:active, #print:active {
+    background-image: linear-gradient(to right, transparent 0%, rgba(0, 100, 200, 0.1) 20%, rgba(0, 100, 200, 0.2) 30%, rgba(0, 100, 200, 0.2) 70%, rgba(0, 100, 200, 0.1) 80%, transparent 100%);
+  }
+
+  section .highlight-container .show-all, section .highlight-container .show-highlights {
+    margin-top: 0.25rem;
+    display: block;
+    width: 100%;
+    font-size: 0.7rem;
+    height: 1.5rem;
+    transition: margin-top 0.25s step-start, height 0.25s step-start, opacity 0.25s ease 0.1s, transform 0.25s ease 0.1s;
+  }
+
+  section .highlight-container:not(:hover) .show-all:not(:focus), section .highlight-container:not(:hover) .show-highlights:not(:focus) {
+    margin-top: 0;
+    height: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: margin-top 0.25s step-end, height 0.25s step-end, opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .lowlight:not(.lowlight-no-gradient) {
+    background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.1) 50%, transparent 90%);
+  }
+
+  .show-highlights img, .show-all img, #print img {
+    height: 1em;
+    width: 1em;
+  }
+}

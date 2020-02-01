@@ -1,0 +1,10 @@
+<li class="award{% if not award.highlight %} lowlight{% endif %}">
+  {% if award.image %}
+    <img src="/img/{{ award.image }}" class="icon" aria-hidden="true" />
+  {% endif %}
+  <span class="team">{{ award.role }}</span>
+  <span class="name">{{ award.name }}</span>
+  {% if award.description %}
+    <span class="description">{{ award.description }}</span>
+  {% endif %}
+</li>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect x="10" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="110" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="210" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="310" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="410" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="10" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(220, 0, 213);"/>
+  <rect x="110" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(220, 0, 213);"/>
+  <rect x="210" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(220, 0, 213);"/>
+  <rect x="310" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(220, 0, 213);"/>
+  <rect x="410" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(220, 0, 213);"/>
+  <path d="M 266.5 84.04 L 277.071 114.451 L 309.26 115.107 L 283.604 134.557 L 292.927 165.373 L 266.5 146.984 L 240.073 165.373 L 249.396 134.557 L 223.74 115.107 L 255.929 114.451 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 247, 0); stroke-width: 2px;" transform="matrix(-0.809017, 0.587785, -0.587785, -0.809017, 743.005595, 4.273724)" bx:shape="star 266.5 129 44.96 44.96 0.4 5 1@aefd5c3f"/>
+</svg>

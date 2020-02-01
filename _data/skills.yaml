@@ -1,0 +1,66 @@
+---
+proficiency:
+- label: Beginner (0 of 5)
+  image: proficiency/0_beginner.svg
+- label: Novice (1 of 5)
+  image: proficiency/1_novice.svg
+- label: Intermediate (2 of 5)
+  image: proficiency/2_intermediate.svg
+- label: Experienced (3 of 5)
+  image: proficiency/3_experienced.svg
+- label: Adept (4 of 5)
+  image: proficiency/4_adept.svg
+- label: Advanced (5 of 5)
+  image: proficiency/5_advanced.svg
+- label: Expert (6 of 5)
+  image: proficiency/6_expert.svg
+categories:
+- id: code
+  title: Code Languages
+  skills:
+  - id: python
+    proficiency: 6
+    name: Python
+    img: skills/code/python.svg
+  - id: java
+    proficiency: 6
+    name: Java
+    img: skills/code/java.svg
+  - id: javascript
+    proficiency: 5
+    name: JavaScript
+    img: skills/code/js.svg
+  - id: typescript
+    proficiency: 4
+    name: TypeScript
+    img: skills/code/typescript.png
+  - id: html5
+    proficiency: 3
+    name: HTML5+CSS3
+    img: skills/code/html5.svg
+  - id: kotlin
+    proficiency: 1
+    name: Kotlin
+    img: skills/code/kotlin.svg
+  - id: golang
+    proficiency: 0
+    name: Go
+    img: skills/code/golang.svg
+- id: libraries
+  title: Libraries/Tools
+  skills:
+  - id: react
+    proficiency: 2
+    name: React
+    img: skills/libraries/react.svg
+- id: languages
+  title: Languages
+  skills:
+  - id: english
+    proficiency: 6
+    name: US English
+    img: skills/languages/us.svg
+  - id: japanese
+    proficiency: 2
+    name: Japanese
+    img: skills/languages/japan.svg

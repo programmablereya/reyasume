@@ -1,0 +1,109 @@
+/* Too small for big margins */
+@media only screen and (max-width: 700px) and (min-width: 571px) {
+  main {
+    padding: 0 calc((100% - 550px) / 2) 72px calc((100vw - 550px) / 2);
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  main {
+    padding: 0 10px 72px 10px;
+  }
+  #print {
+    display: none;
+  }
+}
+
+/* Too small to display the full name, so hide last name and put the
+ * dates in the education and experience sections on their own lines */
+@media only screen and (max-width: 550px) {
+  .lastname {
+    display: none;
+  }
+
+  .program .date {
+    position: static;
+    text-align: inherit;
+  }
+}
+
+/* Too small to display both names, so shorten first name to "Mari"
+ * Also, please get a new phone, or resize the window */
+@media only screen and (max-width: 400px) {
+  .fullname {
+    display: none;
+  }
+}
+
+/* Large desktop only - full size columns and empty space */
+@media only screen and (min-width: 1120px) {
+  main, footer {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width:1099px) {
+  :root {
+    font-size: calc(13px + (100vw - 900px) * 7 / 200)
+  }
+}
+
+/* Not large desktop - no empty space on the sides */
+@media only screen and (max-width: 1119px) {
+  main {
+    width: 100%;
+  }
+}
+
+/* Smaller than desktop - no columns */
+@media only screen and (max-width: 815px) {
+  #content .divider {
+    display: none;
+  }
+
+  #content > .left {
+    width: auto;
+    float: none;
+    clear: none;
+    padding-right: 0;
+  }
+
+  #content > .right {
+    width: auto;
+    float: none;
+    clear: none;
+    padding-left: 0;
+  }
+}
+
+/* Phone or tablet only - single column, no empty space */
+@media only screen and (max-width: 960px) {
+}
+
+/* Tablet or desktop only */
+@media only screen and (min-width: 700px) {
+}
+
+/* Phone only */
+@media only screen and (max-width: 699px) {
+}
+
+/* Large phone only */
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+}
+
+/* Large phone, tablet, or desktop only */
+@media only screen and (min-width: 500px) {
+}
+
+/* Small phone only */
+@media only screen and (max-width: 499px) {
+}

@@ -1,0 +1,76 @@
+---
+roles:
+  - id: bazel-configurability
+    image: jobs/google/bazel.png
+    name: Software Engineer # III
+    team: Bazel Configurability
+    company: Google
+    startDate: 2016-07-15 # vague guess - this was around when I would have
+                          # started getting to work on reviewing configurability
+                          # changes and getting up to speed on this team
+    endDate: 2019-10-04 # dead on, this was my last day at Google
+    shortDescription: |
+      Just buckets of trimming.
+    description: |
+      Let's see here.
+      What did I do on Configurability?
+      Besides _endless_ amounts of **trimming**?
+    achievements:
+      - id: trimming
+        description: |
+          I did _endless_ amounts of **trimming**.
+      - id: other
+        description: |
+          I did other stuff, **too**.
+  - id: bazel-release
+    image: jobs/google/bazel-old.png
+    name: Software Engineer in Test # II
+    team: Bazel Release Process
+    company: Google
+    startDate: 2013-09-15 # rough guess, since I was still working on Wallet in
+                          # Q3 2013, but had fully transitioned to Bazel by
+                          # Q3 2014 - but it hadn't gotten cold yet
+    endDate: 2017-06-15 # did I truly ever stop working on the release process?
+                        # however, this is around when it stopped being my job
+    description: "The long version is, I did so much freaking junk on this thing."
+    shortDescription: "The short version is, a lot."
+    achievements:
+      - id: mentor
+        description: |
+          I taught Florian the secrets of releases.
+      - id: teach
+        description: |
+          I taught everyone else how to be sheriff.
+  - id: bazel-android
+    image: jobs/google/bazel-old.png
+    name: Software Engineer # II
+    team: Bazel Android Support
+    company: Google
+    startDate: 2013-09-15 # same as Bazel Release Process
+    endDate: 2016-11-15 # vague guess - this is around when my focus shifted to
+                        # configurability full-time, since before that I was
+                        # doing configurability as a side job and Android as a
+                        # primary job
+    description: null
+  - id: google-tooling
+    image: jobs/google/google.png
+    name: Software Engineer in Test # II
+    team: Internal Tooling
+    company: Google
+    startDate: 2013-02-15 # rough guess, since Jon mentioned my work on the tool
+                          # in Q3 2013
+                          # which was after I started the UI work in Summer
+                          # which was after I'd been invited to start working on
+                          # the project around midway through Q1
+    endDate: 2017-12-18 # dead on, this is the day I got a peer bonus for
+                        # helping with turning this down
+    description: null
+  - id: wallet-testing
+    image: jobs/google/wallet.jpg
+    name: Software Engineer in Test # II
+    team: Wallet Web Frontend
+    company: Google
+    startDate: 2011-07-18 # dead on, this was my start date
+    endDate: 2013-09-15 # same as with the Bazel Release Process start date,
+                        # since they're the same day
+    description: null

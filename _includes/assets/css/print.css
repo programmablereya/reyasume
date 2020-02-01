@@ -1,0 +1,5 @@
+@media only print {
+  footer, .buttons, .show-all, .show-highlights, #print, .highlight-icon {
+    display: none;
+  }
+}

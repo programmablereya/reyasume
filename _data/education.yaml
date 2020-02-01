@@ -1,0 +1,20 @@
+---
+programs:
+  - id: rpi
+    startDate: 2007-08-15 # approximate date, I don't remember that far back
+    endDate: 2011-05-15 # approximate date, who knows
+    name: Dual B.S. (Computer & Systems Engineering, Computer Science)
+    institution: Rensselaer Polytechnic Institute
+    image: education/rpi.jpg
+  - id: tefl_ita
+    startDate: 2019-08-12
+    endDate: 2019-10-21
+    name: Teaching English as a Foreign Language (partial)
+    institution: International TEFL Academy
+    image: education/tefl_ita.png
+  - id: regis
+    startDate: 2003-09-15 # again how the heck should I know
+    endDate: 2007-06-15 # this was like ages and ages ago
+    name: high school diploma
+    institution: Regis High School
+    image: education/regis.jpeg

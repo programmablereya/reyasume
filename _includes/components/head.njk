@@ -4,6 +4,7 @@
 
   <title>{{ metadata.title }}</title>
   <meta name="description" content="{{ metadata.description }}" />
+  <meta name="format-detection" content="telephone=no">
 
   {% include "components/favicon.njk" %}
   {% include "components/card.njk" %}
@@ -11,11 +12,14 @@
 
   {% set css %}
     {% include "assets/css/main.css" %}
+    {% include "assets/css/print.css" %}
+    {% include "assets/css/screen.css" %}
+    {% include "assets/css/resizing.css" %}
   {% endset %}
-  <style>{{ css | cssmin | safe }}</style>
+  <style>{{ css | minifyCSS | safe }}</style>
 
   {% set js %}
     {% include "assets/js/main.js" %}
   {% endset %}
-  <script>{{ js | jsmin | safe }}</script>
+  <script>{{ js | minifyJS | safe }}</script>
 </head>

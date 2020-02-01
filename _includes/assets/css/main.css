@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700|Montserrat:700|Noto+Sans+JP:300|Nunito+Sans:400,800&display=swap');
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+header {
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+p, h1, h2, h3, ul {
+  margin: 0;
+  font-size: inherit;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Nunito Sans', 'Arial', sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  text-shadow: white 1px 1px 2px, white -1px 1px 2px, white 1px -1px 2px, white -1px -1px 2px;
+  background-color: white;
+  background-image: linear-gradient(to right, white 40%, transparent 60%), linear-gradient(to bottom, transparent 80%, white), url("/img/edupatilla-mari.png");
+  background-size: auto, auto, auto 300%;
+  background-position: center center, center center, right 30%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+header h1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  font-family: 'Montserrat', 'Noto Sans JP', 'Verdana', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  order: 2;
+}
+
+header h2 {
+  background-image: linear-gradient(to bottom, white, transparent 10%);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  position: relative;
+  font-size: 1rem;
+  width: 12rem;
+  left: 1rem;
+  border-top: 1px solid black;
+  order: 3;
+}
+
+section h2 {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 1.375rem;
+  font-variant: small-caps;
+}
+
+section h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+}
+
+header rt {
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.section-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#content {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+#content > .divider {
+  position: absolute;
+  left: calc(12.25rem - 1px);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  border-right: 1px solid black;
+}
+
+#content > .left {
+  width: 12rem;
+  float: left;
+  clear: left;
+  padding-right: 0.625rem;
+}
+
+#content > .right {
+  width: calc(100% - 12rem);
+  float: right;
+  clear: right;
+  padding-left: 0.625rem;
+}
+
+.contacts {
+  padding-left: 0.3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.contact {
+  display: block;
+  margin-left: 0.75rem;
+}
+
+.contacts .container {
+  display: block;
+  font-size: 0.9rem;
+  position: relative;
+  line-height: 1.6rem;
+  height: 1.6rem;
+  text-align: left;
+  width: 10.5rem;
+  padding-left: 2rem;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.contact {
+  margin-top: 0.25rem;
+}
+
+.contact .icon {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.1rem;
+  top: 0.05rem;
+}
+
+.skill-category, .skills {
+  padding-left: 0.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  display: block;
+  position: relative;
+  line-height: 1.4rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  font-size: 0.9rem;
+  width: 10rem;
+  overflow: hidden;
+  margin-left: 0.25rem;
+  margin-top: 0.05rem;
+}
+
+.skill .icon {
+  position: absolute;
+  height: 1.4rem;
+  width: 1.4rem;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+
+.skill .proficiency {
+  position: absolute;
+  height: 1.4rem;
+  width: 7rem;
+  top: 0;
+  left: 2.7rem;
+}
+
+.programs {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+}
+
+.program {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8rem;
+  position: relative;
+  padding-left: 2.7rem;
+  min-height: 2.4rem;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  align-content: stretch;
+}
+.program:not(.first-child) {
+  margin-top: 0.25rem;
+}
+.program .institution {
+  font-size: 1rem;
+  font-weight: bold;
+  flex: none;
+}
+.program .date {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  text-align: right;
+}
+.program .name {
+  font-style: italic;
+  flex: none;
+}
+.program .notes {
+  flex: none;
+}
+
+.program .icon {
+  position: absolute;
+  height: 2.4rem;
+  width: 2.4rem;
+  left: 0;
+  top: 0;
+}
+
+.roles {
+  padding-left: 1.25rem;
+}
+
+.role {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 3.1rem;
+  min-height: 3rem;
+}
+
+.role .firstline {
+  /* display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline; */
+  flex: 1 1 100%;
+}
+
+.role .firstline .name {
+  display: inline;
+}
+
+#page:not(.showing-all) .role.minimized:not(.showing-all) .header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.role .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+}
+
+#page:not(.showing-all) .role.minimized:not(.showing-all) .icon {
+  margin-right: 0.25rem;
+}
+
+#page:not(.showing-all) .role.minimized:not(.showing-all) .name {
+  font-size: 1rem;
+}
+
+#page:not(.showing-all) .role.minimized:not(.showing-all) .description,
+#page:not(.showing-all) .role.minimized:not(.showing-all) .achievement  {
+  font-size: 0.9rem;
+}
+
+.role .details, .role .details .date {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  font-family: 'Nunito Sans', 'Arial', sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  flex: 1 0 auto;
+  max-width: 100%;
+}
+
+.role .details .date {
+  justify-content: flex-end;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+.role .details .team, .role .details .company, .role .details .date .start, .role .details .date .end {
+  display: inline-block;
+  flex: none;
+}
+
+.role .achievements {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+
+.awards {
+  padding-left: 0.625rem;
+}
+
+.award {
+  position: relative;
+  padding-left: 2.1rem;
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8rem;
+}
+
+.award {
+  margin-top: 0.25rem;
+}
+
+.award .icon {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  left: 0;
+  top: 0;
+}
+
+.award .name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.award .team {
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+/*
+ * .highlight-container: marker for an element which can have its children
+ * shown or hidden. Should never be nested more than two deep (#page and one
+ * more element between #page and any elements affected by this) - could be
+ * modified to support such a thing, but no need yet
+ *
+ * .highlight: a highlight-only view of some element, typically a shorter
+ * version of a full-length text containing only the highlights
+ * .show-all: button to make the current highlight container show its
+ * contained lowlights and hide its highlights
+ *
+ * elements with these classes are visible only when neither #page nor their
+ * surrounding container is showing all, thus hidden if either #page or their
+ * surrounding container is showing all:
+ *     visible = not(#page.showing-all or surrounding-container.showing-all)
+ *     visible = not(#page.showing-all) and not(surrounding-container.showing-all)
+ *     hidden = not visible
+ *     hidden = not(not(#page.showing-all or surrounding-container.showing-all))
+ *     hidden = #page.showing-all or surrounding-container.showing-all
+ *
+ * As #page is itself a highlight container which surrounds everything, this
+ * is simplified to just ".highlight-container.showing-all".
+ *
+ * .lowlight: an element or view of an element which will likely be
+ * uninteresting to whoever the current highlighted version is for
+ *
+ * elements with this class are visible only when either #page or their
+ * surrounding container is showing all, thus hidden if both #page and their
+ * surrounding container are _not_ showing all:
+ *     visible = #page.showing-all or surrounding-container.showing-all
+ *     hidden = not visible
+ *     hidden = not(#page.showing-all or surrounding-container.showing-all)
+ *     hidden = not(#page.showing-all) and not(surrounding-container.showing-all)
+ *
+ * .show-highlights: button to make the current highlight container hide its
+ * contained lowlights and show its highlights
+ *
+ * elements with this class are visible only when their surrounding container
+ * and _not_ #page is showing all. This is because when #page is showing all,
+ * the .show-highlights for individual sections have no effect. Thus they are
+ * hidden if the page is showing all or if the surrounding container is not
+ * showing all:
+ *     visible = not(#page.showing-all) and surrouding-container.showing-all
+ *     hidden = not visible
+ *     hidden = not(not(#page.showing-all) and surrounding-container.showing-all)
+ *     hidden = #page.showing-all or not(surrounding-container.showing-all)
+ *
+ * Since the buttons are not inside an inner container, we add an alternative
+ * for the buttons which only consults whether #page is not showing all.
+ */
+.highlight-container.showing-all .highlight,
+.highlight-container.showing-all .show-all,
+#page.highlight-container:not(.showing-all) .highlight-container:not(.showing-all) .lowlight,
+#page.highlight-container:not(.showing-all) header .buttons .lowlight,
+#page.highlight-container:not(.showing-all) header .buttons .show-highlights,
+#page.highlight-container:not(.showing-all) .highlight-container:not(.showing-all) .show-highlights,
+#page.highlight-container.showing-all .highlight-container .show-highlights {
+  display: none;
+}
+
+.highlight-icon {
+  float: right;
+  opacity: 0.6;
+  height: 1rem;
+  width: 1rem;
+}
+
+.highlight-icon:hover {
+  opacity: 1.0;
+}
+
+.highlight-container.showing-all .highlight-icon {
+  display: none;
+}

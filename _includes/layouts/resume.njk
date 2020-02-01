@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+---
+
+<div id="resume">
+  <header>
+    {% include "components/resume/header.njk" %}
+  </header>
+
+  <div id="content">
+    <div class="divider"></div>
+    <section id="contact" class="left">
+      {% include "components/resume/contact-section.njk" %}
+    </section>
+
+    <section id="education" class="right">
+      {% include "components/resume/education-section.njk" %}
+    </section>
+
+    <section id="about" class="right">
+      <h2>About</h2>
+      {{ layoutContent | safe }}
+    </section>
+
+    <section id="skills" class="left">
+      {% include "components/resume/skill-section.njk" %}
+    </section>
+
+    <section id="experience" class="right">
+      {% include "components/resume/experience-section.njk" %}
+    </section>
+
+    <section id="awards" class="left">
+      {% include "components/resume/award-section.njk" %}
+    </section>
+  </div>
+</div>

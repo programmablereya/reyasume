@@ -1,0 +1,12 @@
+{# Uses loop variable: skill #}
+{# Uses data store: skills.proficiency #}
+
+<li class="skill{% if not skill.highlight %} lowlight{% endif %}" title="{{ skills.proficiency[skill.proficiency].label }}">
+  {% if skill.img %}
+    <img src="/img/{{ skill.img }}" class="icon" aria-hidden="true" />
+  {% endif %}
+  <img src="/img/{{ skills.proficiency[skill.proficiency].image }}"
+       class="proficiency"
+       aria-label="{{ skills.proficiency[skill.proficiency].label }}" />
+  <span class="name">{{ skill.name }}</span>
+</li>

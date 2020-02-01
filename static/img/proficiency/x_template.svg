@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect x="10" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="110" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="210" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="310" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="410" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="10" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); fill: rgb(224, 0, 0); stroke-width: 2px;"/>
+  <rect x="110" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); fill: rgb(242, 238, 0); stroke-width: 2px;"/>
+  <rect x="210" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); fill: rgb(27, 228, 0); stroke-width: 2px;"/>
+  <rect x="310" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); fill: rgb(0, 146, 237); stroke-width: 2px;"/>
+  <rect x="410" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); fill: rgb(0, 98, 255); stroke-width: 2px;"/>
+  <g style="" transform="matrix(0.829529, -0.085909, 0.085909, 0.829529, 78.401123, 44.879551)">
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 4.79636px;" d="M 409.997 31.712 L 489.997 31.712 L 449.997 61.712 L 489.997 91.712 L 409.997 91.712 L 369.997 61.712 L 409.997 31.712 Z" transform="matrix(0.797792, -0.602933, 0.602933, 0.797792, 49.740663, 271.737974)"/>
+    <path style="fill: rgb(255, 242, 0);" d="M 400.953 34.745 L 480.953 34.745 L 440.953 64.745 L 360.953 64.745 L 400.953 34.745 Z" transform="matrix(0.797792, -0.602933, 0.602933, 0.797792, 55.127189, 263.865223)"/>
+    <path style="fill: rgb(28, 179, 5);" d="M 379.041 58.679 L 459.041 58.679 L 499.041 88.679 L 419.041 88.679 L 379.041 58.679 Z" transform="matrix(0.797792, -0.602933, 0.602933, 0.797792, 44.35413, 279.610708)"/>
+  </g>
+  <path d="M 266.5 84.04 L 277.071 114.451 L 309.26 115.107 L 283.604 134.557 L 292.927 165.373 L 266.5 146.984 L 240.073 165.373 L 249.396 134.557 L 223.74 115.107 L 255.929 114.451 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 247, 0); stroke-width: 2px;" transform="matrix(-0.809017, 0.587785, -0.587785, -0.809017, 743.005595, 4.273724)" bx:shape="star 266.5 129 44.96 44.96 0.4 5 1@aefd5c3f"/>
+</svg>

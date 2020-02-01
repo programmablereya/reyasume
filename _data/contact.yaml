@@ -1,0 +1,27 @@
+---
+methods:
+- id: us-phone
+  name: US phone number
+  text: "+1-000-000-0000"
+  link: tel:+01-
+  img: contacts/us.svg
+- id: jp-phone
+  name: JP phone number
+  text: "+81-00-0000-0000"
+  link: tel:+81-
+  img: contacts/japan.svg
+- id: address
+  name: Permanent address
+  text: Manhattan, NY, USA
+  link: https://goo.gl/maps/vPM5FrX9ut7fjQ1MA
+  img: contacts/home.svg
+- id: resume
+  name: Full resume website
+  text: resume.reya.zone
+  link: https://resume.reya.zone
+  img: contacts/www.svg
+- id: github
+  name: Github username
+  text: programmablereya
+  link: https://github.com/programmablereya
+  img: contacts/github.png

@@ -1,0 +1,12 @@
+{# Uses loop variable: contact #}
+
+<li title="{{ contact.name }}" class="contact{% if not contact.link %} container{% endif %}{% if not contact.highlight %} lowlight{% endif %}">
+  {% if contact.link %}
+    <a class="container" href="{{ contact.link }}" rel="nofollow">
+  {% endif %}
+        <img src="/img/{{ contact.img }}" alt="{{ contact.name }}" class="icon"/>
+        <span class="text">{{ contact.text }}</span>
+  {% if contact.link %}
+    </a>
+  {% endif %}
+</li>

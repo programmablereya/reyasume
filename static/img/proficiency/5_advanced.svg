@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="110" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="210" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="310" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="410" y="89" width="80" height="10" style="fill: rgb(216, 216, 216);"/>
+  <rect x="10" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(0, 98, 255);"/>
+  <rect x="110" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(0, 98, 255);"/>
+  <rect x="210" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(0, 98, 255);"/>
+  <rect x="310" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(0, 98, 255);"/>
+  <rect x="410" y="89" width="80" height="10" style="stroke: rgb(0, 0, 0); fill: rgb(0, 98, 255); stroke-width: 2px;"/>
+</svg>

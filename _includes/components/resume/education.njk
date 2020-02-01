@@ -1,0 +1,13 @@
+{# Uses loop variable: program #}
+
+<li class="program{% if not program.highlight %} lowlight{% endif %}">
+    {% if program.image %}
+      <img src="/img/{{ program.image }}" class="icon" aria-hidden="true" />
+    {% endif %}
+    <span class="institution">{{ program.institution }}</span>
+    <span class="name">{{ program.name }}</span>
+    {% if program.notes %}
+      <span class="notes">{{ program.notes }}</span>
+    {% endif %}
+    <span class="date">{{ program.endDate | monthAndYear }}</span>
+</li>

@@ -1,0 +1,17 @@
+---
+awards:
+  - id: perfy
+    image: jobs/google/bazel.png
+    role: Google (Bazel)
+    name: Bronze Perfy
+    description: Part of tooling team for Google-wide migration
+  - id: python-readability
+    image: jobs/google/google.png
+    role: Google
+    name: py-readability
+    description: High-quality, well-structured Python code
+  - id: deans-list
+    image: education/rpi.jpg
+    role: RPI
+    name: Dean's List
+    description: Had consistently high GPA for each semester

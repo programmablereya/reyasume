@@ -1,0 +1,40 @@
+{# uses loop variable role #}
+
+<article class="role highlight-container{% if not role.highlight %} minimized{% endif %}">
+  <div class="header">
+    {% if role.image %}<img src="/img/{{ role.image }}" class="icon" aria-hidden="true" />{% endif %}
+    <div class="firstline">
+      <h3 class="name">
+        {{ role.name }}&nbsp;
+      </h3>
+      {% if ((not role.highlight) and role.shortDescription) or role.achievements | hasLowlights %}
+        {% include "components/resume/highlight-icon.njk" %}
+      {% endif %}
+    </div>
+    <span class="details">
+      {% if role.team %}<span class="team">on {{ role.team }}&nbsp;</span>{% endif %}
+      {% if role.company %}<span class="company">at {{ role.company }}&nbsp;</span>{% endif %}
+      <span class="date">
+        {% if role.startDate %}<span class="start">&nbsp;from {{ role.startDate | monthAndYear }}</span>{% endif %}
+        {% if role.endDate %}<span class="end">&nbsp;until {{ role.endDate | monthAndYear }}</span>{% endif %}
+      </span>
+    </span>
+  </div>
+  {% if role.description %}
+    <div class="description{% if (not role.highlight) and role.shortDescription %} lowlight{% endif %}">
+      {{ role.description | md | safe }}
+    </div>
+  {% endif %}
+  {% if (not role.highlight) and role.shortDescription %}
+    <div class="description highlight">
+      {{ role.shortDescription | md | safe }}
+    </div>
+  {% endif %}
+  {% if role.achievements %}
+    <ul class="achievements">
+      {% for achievement in role.achievements %}
+        <li{% if not achievement.highlight %} class="lowlight"{% endif %}>{{achievement.description | md | safe }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</article>

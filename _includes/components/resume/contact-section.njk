@@ -1,0 +1,18 @@
+{# Uses page variable: filter.contact #}
+{# Uses data store: contact.methods #}
+{% set contactFilter = filter.contact if filter and filter.contact else "all" %}
+{% set contactsFiltered = contact.methods | identifyHighlights(contactFilter) %}
+
+<div class="highlight-container">
+  <div class="section-header">
+    <h2>Contact</h2>
+    {% if contactsFiltered | hasLowlights %}
+      {% include "components/resume/highlight-icon.njk" %}
+    {% endif %}
+  </div>
+  <ul class="contacts">
+    {% for contact in contactsFiltered %}
+      {% include "components/resume/contact.njk" %}
+    {% endfor %}
+  </ul>
+</div>
