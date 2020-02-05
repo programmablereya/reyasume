@@ -280,7 +280,7 @@ header rt {
   display: inline;
 }
 
-#page:not(.showing-all) .role.minimized:not(.showing-all) .header {
+#highlight-container:not(.showing-all) .role.minimized .header {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -295,16 +295,16 @@ header rt {
   height: 3rem;
 }
 
-#page:not(.showing-all) .role.minimized:not(.showing-all) .icon {
+#highlight-container:not(.showing-all) .role.minimized .icon {
   margin-right: 0.25rem;
 }
 
-#page:not(.showing-all) .role.minimized:not(.showing-all) .name {
+#highlight-container:not(.showing-all) .role.minimized .name {
   font-size: 1rem;
 }
 
-#page:not(.showing-all) .role.minimized:not(.showing-all) .description,
-#page:not(.showing-all) .role.minimized:not(.showing-all) .achievement  {
+#highlight-container:not(.showing-all) .role.minimized .description,
+#highlight-container:not(.showing-all) .role.minimized .achievement  {
   font-size: 0.9rem;
 }
 
