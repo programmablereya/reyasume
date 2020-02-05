@@ -11,9 +11,10 @@ filter:
       - "-python"
     languages: all
   experience:
-    "-all": false
+    "all": false
     "bazel-configurability":
       - other
+    "-wallet-testing": false
   awards:
     - perfy
 ---

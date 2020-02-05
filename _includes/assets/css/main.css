@@ -372,62 +372,30 @@ header rt {
 }
 
 /*
- * .highlight-container: marker for an element which can have its children
- * shown or hidden. Should never be nested more than two deep (#page and one
- * more element between #page and any elements affected by this) - could be
- * modified to support such a thing, but no need yet
+ * #highlight-container: marker for the element whose children can be shown or
+ * hidden.
  *
  * .highlight: a highlight-only view of some element, typically a shorter
  * version of a full-length text containing only the highlights
- * .show-all: button to make the current highlight container show its
- * contained lowlights and hide its highlights
+ * .show-all: button to make the highlight container show its contained
+ * lowlights and hide its highlights
  *
- * elements with these classes are visible only when neither #page nor their
- * surrounding container is showing all, thus hidden if either #page or their
- * surrounding container is showing all:
- *     visible = not(#page.showing-all or surrounding-container.showing-all)
- *     visible = not(#page.showing-all) and not(surrounding-container.showing-all)
- *     hidden = not visible
- *     hidden = not(not(#page.showing-all or surrounding-container.showing-all))
- *     hidden = #page.showing-all or surrounding-container.showing-all
- *
- * As #page is itself a highlight container which surrounds everything, this
- * is simplified to just ".highlight-container.showing-all".
+ * elements with these classes are visible only when #highlight-container is not
+ * showing all, thus hidden if #highlight-container is showing all.
  *
  * .lowlight: an element or view of an element which will likely be
  * uninteresting to whoever the current highlighted version is for
- *
- * elements with this class are visible only when either #page or their
- * surrounding container is showing all, thus hidden if both #page and their
- * surrounding container are _not_ showing all:
- *     visible = #page.showing-all or surrounding-container.showing-all
- *     hidden = not visible
- *     hidden = not(#page.showing-all or surrounding-container.showing-all)
- *     hidden = not(#page.showing-all) and not(surrounding-container.showing-all)
- *
- * .show-highlights: button to make the current highlight container hide its
+ * .show-highlights: button to make the highlight container hide its
  * contained lowlights and show its highlights
  *
- * elements with this class are visible only when their surrounding container
- * and _not_ #page is showing all. This is because when #page is showing all,
- * the .show-highlights for individual sections have no effect. Thus they are
- * hidden if the page is showing all or if the surrounding container is not
- * showing all:
- *     visible = not(#page.showing-all) and surrouding-container.showing-all
- *     hidden = not visible
- *     hidden = not(not(#page.showing-all) and surrounding-container.showing-all)
- *     hidden = #page.showing-all or not(surrounding-container.showing-all)
+ * elements with these classes are visible only when #highlight-container is
+ * showing all, thus hidden if #highlight-container is _not_ showing all.
  *
- * Since the buttons are not inside an inner container, we add an alternative
- * for the buttons which only consults whether #page is not showing all.
  */
-.highlight-container.showing-all .highlight,
-.highlight-container.showing-all .show-all,
-#page.highlight-container:not(.showing-all) .highlight-container:not(.showing-all) .lowlight,
-#page.highlight-container:not(.showing-all) header .buttons .lowlight,
-#page.highlight-container:not(.showing-all) header .buttons .show-highlights,
-#page.highlight-container:not(.showing-all) .highlight-container:not(.showing-all) .show-highlights,
-#page.highlight-container.showing-all .highlight-container .show-highlights {
+#highlight-container.showing-all .highlight,
+#highlight-container.showing-all .show-all,
+#highlight-container:not(.showing-all) .lowlight,
+#highlight-container:not(.showing-all) .show-highlights {
   display: none;
 }
 
@@ -442,6 +410,6 @@ header rt {
   opacity: 1.0;
 }
 
-.highlight-container.showing-all .highlight-icon {
+#highlight-container.showing-all .highlight-icon {
   display: none;
 }

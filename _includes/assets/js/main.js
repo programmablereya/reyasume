@@ -1,29 +1,11 @@
 (function(window, document) {
-  function findClosestParentMatching(child, selector) {
-    if (!child) {
-      return null;
-    } else if (child.matches(selector)) {
-      return child;
-    } else {
-      return findClosestParentMatching(child.parentElement, selector);
-    }
-  }
-
   function showAll(button) {
-    parent = findClosestParentMatching(button, ".highlight-container");
-    if (!parent) {
-      return;
-    }
-
+    parent = document.getElementById('highlight-container');
     parent.classList.add("showing-all");
   }
 
   function showHighlights(button) {
-    parent = findClosestParentMatching(button, ".highlight-container");
-    if (!parent) {
-      return;
-    }
-
+    parent = document.getElementById('highlight-container');
     parent.classList.remove("showing-all");
   }
 

@@ -3,16 +3,14 @@
 {% set educationFilter = filter.education if filter and filter.education else "all" %}
 {% set educationFiltered = education.programs | identifyHighlights(educationFilter) %}
 
-<div class="highlight-container">
-  <div class="section-header">
-    <h2>Education</h2>
-    {% if educationFiltered | hasLowlights %}
-      {% include "components/resume/highlight-icon.njk" %}
-    {% endif %}
-  </div>
-  <ul class="programs">
-    {% for program in educationFiltered %}
-      {% include "components/resume/education.njk" %}
-    {% endfor %}
-  </ul>
+<div class="section-header">
+  <h2>Education</h2>
+  {% if educationFiltered | hasLowlights %}
+    {% include "components/resume/highlight-icon.njk" %}
+  {% endif %}
 </div>
+<ul class="programs">
+  {% for program in educationFiltered %}
+    {% include "components/resume/education.njk" %}
+  {% endfor %}
+</ul>

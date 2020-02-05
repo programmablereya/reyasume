@@ -147,6 +147,34 @@ module.exports = function(eleventyConfig) {
   }
   eleventyConfig.addFilter("identifyHighlightsRecursive", identifyHighlightsRecursive);
 
+  function identifyExperienceHighlights(roleList, filter) {
+    const expandedRoleList = roleList.map(function(role) {
+      const children = role.achievements
+        ? role.achievements.slice()
+        : [];
+      const fullDescription = role.description || role.shortDescription;
+      const shortDescription = role.description && role.shortDescription;
+      const descriptionObject = {
+        full: fullDescription,
+        short: shortDescription,
+        highlight: false
+      };
+      children.push(descriptionObject);
+      return inheritAndAdd(role, {
+        description: descriptionObject,
+        shortDescription: null,
+        _children: children
+      });
+    });
+    const highlightedRoleList = identifyHighlightsRecursive(expandedRoleList, filter, "_children");
+    highlightedRoleList.forEach(function(role) {
+      role.description = role._children[role._children.length - 1];
+      role.achievements = role._children.slice(0, role._children.length - 1);
+    });
+    return highlightedRoleList;
+  }
+  eleventyConfig.addFilter("identifyExperienceHighlights", identifyExperienceHighlights);
+
   // Checks if there are any items with a truthy highlight property in itemList.
   function hasHighlights(itemList) {
     if (!Array.isArray(itemList)) {

@@ -1,10 +1,13 @@
 {# uses page variable filter.experience #}
 {# uses data store experience.roles #}
 {% set experienceFilter = filter.experience if filter and filter.experience else "all" %}
-{% set experienceRolesFiltered = experience.roles | identifyHighlightsRecursive(experienceFilter, "achievements") %}
+{% set experienceRolesFiltered = experience.roles | identifyExperienceHighlights(experienceFilter) %}
 
 <div class="section-header">
   <h2>Experience</h2>
+  {% if experienceRolesFiltered | hasLowlights %}
+    {% include "components/resume/highlight-icon.njk" %}
+  {% endif %}
 </div>
 <div class="roles">
   {% for role in experienceRolesFiltered %}

@@ -3,16 +3,14 @@
 {% set awardsFilter = filter.awards if filter and filter.awards else "all" %}
 {% set awardsFiltered = awards.awards | identifyHighlights(awardsFilter) %}
 
-<div class="highlight-container">
-  <div class="section-header">
-    <h2>Awards</h2>
-    {% if awardsFiltered | hasLowlights %}
-      {% include "components/resume/highlight-icon.njk" %}
-    {% endif %}
-  </div>
-  <ul class="awards">
-    {% for award in awardsFiltered %}
-      {% include "components/resume/award.njk" %}
-    {% endfor %}
-  </ul>
+<div class="section-header">
+  <h2>Awards</h2>
+  {% if awardsFiltered | hasLowlights %}
+    {% include "components/resume/highlight-icon.njk" %}
+  {% endif %}
 </div>
+<ul class="awards">
+  {% for award in awardsFiltered %}
+    {% include "components/resume/award.njk" %}
+  {% endfor %}
+</ul>
