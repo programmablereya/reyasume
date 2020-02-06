@@ -18,6 +18,22 @@ categories:
 - id: code
   title: Code Languages
   skills:
+  - id: javascript
+    proficiency: 6
+    name: JavaScript
+    img: skills/code/js.svg
+  - id: typescript
+    proficiency: 4
+    name: TypeScript
+    img: skills/code/typescript.png
+  - id: dart
+    proficiency: 4
+    name: Dart
+    img: skills/code/dart.svg
+  - id: html5
+    proficiency: 4
+    name: HTML5+CSS3
+    img: skills/code/html5.svg
   - id: python
     proficiency: 6
     name: Python
@@ -26,33 +42,135 @@ categories:
     proficiency: 6
     name: Java
     img: skills/code/java.svg
-  - id: javascript
-    proficiency: 5
-    name: JavaScript
-    img: skills/code/js.svg
-  - id: typescript
-    proficiency: 4
-    name: TypeScript
-    img: skills/code/typescript.png
-  - id: html5
-    proficiency: 3
-    name: HTML5+CSS3
-    img: skills/code/html5.svg
   - id: kotlin
-    proficiency: 1
+    proficiency: 3
     name: Kotlin
     img: skills/code/kotlin.svg
   - id: golang
-    proficiency: 0
+    proficiency: 3
     name: Go
     img: skills/code/golang.svg
-- id: libraries
-  title: Libraries/Tools
-  skills:
-  - id: react
+  - id: csharp
+    proficiency: 3
+    name: 'C#'
+    img: skills/code/csharp.svg
+  - id: vbnet
+    proficiency: 1
+    name: VB.NET
+    img: skills/code/vbnet.svg
+  - id: ruby
+    proficiency: 3
+    name: Ruby
+    img: skills/code/ruby.svg
+  - id: cplusplus
     proficiency: 2
+    name: C/C++
+    img: skills/code/cpp.svg
+  - id: php
+    proficiency: 1
+    name: PHP
+    img: skills/code/php.svg
+  - id: bash
+    proficiency: 5
+    name: Bash
+    img: skills/code/bash.svg
+  - id: sql
+    proficiency: 3
+    name: SQL
+    img: skills/code/sql.svg
+- id: libraries
+  title: Libraries
+  skills:
+  - id: angular
+    proficiency: 4
+    name: AngularJS/2/Dart
+    img: skills/libraries/angular.svg
+  - id: react
+    proficiency: 3
     name: React
     img: skills/libraries/react.svg
+  - id: jquery
+    proficiency: 2
+    name: JQuery
+    img: skills/libraries/jquery.svg
+  - id: eleventy
+    proficiency: 5
+    name: Eleventy
+    img: skills/libraries/eleventy.svg
+  - id: rails
+    proficiency: 2
+    name: Ruby on Rails
+    img: skills/libraries/rails.svg
+  - id: node
+    proficiency: 3
+    name: NodeJS/NPM
+    img: skills/libraries/node.svg
+  - id: electron
+    proficiency: 3
+    name: Electron
+    img: skills/libraries/electron.svg
+  - id: sqlite
+    proficiency: 4
+    name: SQLite
+    img: skills/libraries/sqlite.svg
+  - id: postgresql
+    proficiency: 4
+    name: PostgreSQL
+    img: skills/libraries/postgres.svg
+- id: tools
+  title: Tools
+  skills:
+  - id: git
+    proficiency: 4
+    name: Git
+    img: skills/tools/git.svg
+  - id: hg
+    proficiency: 2
+    name: Mercurial
+    img: skills/tools/mercurial.png
+  - id: svn
+    proficiency: 1
+    name: Subversion
+    img: skills/tools/svn.png
+  - id: linux
+    proficiency: 5
+    name: Linux tools
+    img: skills/tools/linux.svg
+  - id: bazel
+    proficiency: 6
+    name: Bazel
+    img: skills/tools/bazel.png
+  - id: gradle
+    proficiency: 2
+    name: Gradle
+    img: skills/tools/gradle.svg
+  - id: docker
+    proficiency: 1
+    name: Docker
+    img: skills/tools/docker.png
+- id: engineering
+  title: Engineering
+  skills:
+  - id: adaptability
+    proficiency: 6
+    name: Adaptability
+    img: skills/engineering/study.svg
+  - id: communication
+    proficiency: 5
+    name: Communication
+    img: skills/engineering/speech-bubble.svg
+  - id: design
+    proficiency: 4
+    name: Design
+    img: skills/engineering/computer.svg
+  - id: documentation
+    proficiency: 5
+    name: Documentation
+    img: skills/engineering/guide.svg
+  - id: testing
+    proficiency: 4
+    name: Testing
+    img: skills/engineering/test.svg
 - id: languages
   title: Languages
   skills:

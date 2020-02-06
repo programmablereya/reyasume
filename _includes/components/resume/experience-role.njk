@@ -1,8 +1,8 @@
 {# uses loop variable role #}
 {% set hasShortDescription = role.highlight and (not role.description.highlight) and role.description.short %}
 
-<article class="role {% if not role.highlight %} lowlight{% endif %}{% if role.highlight and not role.description.highlight %} minimized{% endif %}">
-  <div class="header">
+<article class="role {% if not role.highlight %} lowlight lowlight-no-gradient{% endif %}{% if role.highlight and not role.description.highlight %} minimized{% endif %}">
+  <div class="header{% if not role.highlight %} lowlight{% endif %}">
     {% if role.image %}<img src="/img/{{ role.image }}" class="icon" aria-hidden="true" />{% endif %}
     <div class="firstline">
       <h3 class="name">
@@ -15,14 +15,22 @@
     <span class="details">
       {% if role.team %}<span class="team">on {{ role.team }}&nbsp;</span>{% endif %}
       {% if role.company %}<span class="company">at {{ role.company }}&nbsp;</span>{% endif %}
-      <span class="date">
-        {% if role.startDate %}<span class="start">&nbsp;from {{ role.startDate | monthAndYear }}</span>{% endif %}
-        {% if role.endDate %}<span class="end">&nbsp;until {{ role.endDate | monthAndYear }}</span>{% endif %}
-      </span>
+      {% if role.startDate or role.endDate %}
+        <span class="date">
+          {% if role.startDate %}
+            <span class="start">&nbsp;from {{ role.startDate | monthAndYear }}</span>
+          {% endif %}
+          {% if role.endDate %}
+            <span class="end">&nbsp;until {{ role.endDate | monthAndYear }}</span>
+          {% else %}
+            <span class="end">&nbsp;(ongoing)</span>
+          {% endif %}
+        </span>
+      {% endif %}
     </span>
   </div>
   {% if role.description.full %}
-    <div class="description{% if hasShortDescription %} lowlight{% endif %}">
+    <div class="description{% if hasShortDescription or not role.highlight %} lowlight{% endif %}">
       {{ role.description.full | md | safe }}
     </div>
   {% endif %}
@@ -34,7 +42,7 @@
   {% if role.achievements %}
     <ul class="achievements">
       {% for achievement in role.achievements %}
-        <li{% if role.highlight and not achievement.highlight %} class="lowlight"{% endif %}>{{achievement.description | md | safe }}</li>
+        <li{% if not role.highlight or not achievement.highlight %} class="lowlight"{% endif %}>{{achievement.description | md | safe }}</li>
       {% endfor %}
     </ul>
   {% endif %}

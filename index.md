@@ -1,22 +1,16 @@
 ---
 layout: layouts/resume.njk
 filter:
-  contact:
-    - us-phone
+  contact: all
   education:
     - rpi
-  skills:
-    code:
-      - all
-      - "-python"
-    languages: all
-  experience:
-    "all": false
-    "bazel-configurability":
-      - other
-    "-wallet-testing": false
-  awards:
-    - perfy
+  skills: all
+  experience: all
+  awards: all
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies mi. Ut porttitor leo a diam. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Leo vel orci porta non pulvinar. Enim nunc faucibus a pellentesque sit amet porttitor eget. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Amet volutpat consequat mauris nunc congue. Quam adipiscing vitae proin sagittis nisl. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Aliquam nulla facilisi cras fermentum odio eu feugiat. Sed adipiscing diam donec adipiscing tristique. Sed odio morbi quis commodo odio.
+Computers are my life. Since receiving a my-first-QBasic book from my computer teacher in first grade, I've been fascinated by everything programming - the fast-growing capabilities of the web, the immense power of distributed databases, cross-process synchronization in parallel programming, low-level memory management, high-level programming techniques and methods of approaching problems...
+
+I am constantly picking up new languages and frameworks to satisfy my curiosity - the list on this page is testament to that! - and recently that tendency has extended to human languages, as well, with Japanese. So it is that as I decide to try living away from my birthplace of New York, I'm moving to Tokyo to further my interest in Japanese and in Japan.
+
+I'm looking to continue my software engineering journey while I'm there. I'd like to work on interesting, meaningful problems in a close-knit, team-based environment. If your company might be that environment, give me an email or a call!

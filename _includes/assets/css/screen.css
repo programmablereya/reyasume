@@ -20,18 +20,29 @@
 		text-shadow: black 1px 1px 1px, black -1px 1px 1px, black 1px -1px 1px, black -1px -1px 1px;
   }
 
-  footer a:link, footer a:visited {
+  footer a:link, footer a:visited, footer button {
+    display: inline;
     color: #4ec6f5;
     font-weight: bold;
     text-decoration: none;
+    background: transparent;
+    font-size: inherit;
+    text-shadow: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0;
   }
 
-  footer a:hover, footer a:focus {
+  footer a:hover, footer a:focus, footer button:hover, footer button:focus {
     color: #87deff;
   }
 
-  footer a:active {
+  footer a:active, footer button:active {
     color: #3d86fc;
+  }
+
+  #image-credits:not(.showing-all) p, #image-credits.showing-all #image-credits-toggle {
+    display: none;
   }
 
   header .buttons {

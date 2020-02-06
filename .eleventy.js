@@ -155,6 +155,7 @@ module.exports = function(eleventyConfig) {
       const fullDescription = role.description || role.shortDescription;
       const shortDescription = role.description && role.shortDescription;
       const descriptionObject = {
+        id: "description",
         full: fullDescription,
         short: shortDescription,
         highlight: false
@@ -199,24 +200,24 @@ module.exports = function(eleventyConfig) {
 
   // Checks if there are any items within this list or its children with a
   // truthy highlight property.
-  function hasHighlightsRecursive(itemList, headAttribute, nextAttribute, tailAttributes) {
+  function hasHighlightsRecursive(itemList, headAttribute, nextAttribute, ...tailAttributes) {
     if (!Array.isArray(itemList)) {
       return false;
     }
     return hasHighlights(itemList) || itemList.some(
-      (child) => headAttribute in child && child.hasHighlightsRecursive(
+      (child) => headAttribute in child && hasHighlightsRecursive(
         child[headAttribute], nextAttribute, ...tailAttributes));
   }
   eleventyConfig.addFilter("hasHighlightsRecursive", hasHighlightsRecursive);
 
   // Checks if there are any items within this list or its children with a
   // falsy highlight property.
-  function hasLowlightsRecursive(itemList, headAttribute, nextAttribute, tailAttributes) {
+  function hasLowlightsRecursive(itemList, headAttribute, nextAttribute, ...tailAttributes) {
     if (!Array.isArray(itemList)) {
       return false;
     }
     return hasLowlights(itemList) || itemList.some(
-      (child) => headAttribute in child && child.hasLowlightsRecursive(
+      (child) => headAttribute in child && hasLowlightsRecursive(
         child[headAttribute], nextAttribute, ...tailAttributes));
   }
   eleventyConfig.addFilter("hasLowlightsRecursive", hasLowlightsRecursive);

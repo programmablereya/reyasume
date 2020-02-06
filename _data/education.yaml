@@ -5,7 +5,7 @@ programs:
     endDate: 2011-05-15 # approximate date, who knows
     name: Dual B.S. (Computer & Systems Engineering, Computer Science)
     institution: Rensselaer Polytechnic Institute
-    image: education/rpi.jpg
+    image: education/rpi.png
   - id: tefl_ita
     startDate: 2019-08-12
     endDate: 2019-10-21
@@ -17,4 +17,4 @@ programs:
     endDate: 2007-06-15 # this was like ages and ages ago
     name: high school diploma
     institution: Regis High School
-    image: education/regis.jpeg
+    image: education/regis.png

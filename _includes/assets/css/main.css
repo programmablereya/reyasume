@@ -162,6 +162,10 @@ header rt {
   top: 0.05rem;
 }
 
+#about p {
+  margin-bottom: 0.5rem;
+}
+
 .skill-category, .skills {
   padding-left: 0.5rem;
 }
@@ -169,7 +173,7 @@ header rt {
 .skills {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .skill {
@@ -185,6 +189,7 @@ header rt {
   overflow: hidden;
   margin-left: 0.25rem;
   margin-top: 0.05rem;
+  border-radius: 2px;
 }
 
 .skill .icon {

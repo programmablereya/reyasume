@@ -11,7 +11,7 @@ awards:
     name: py-readability
     description: High-quality, well-structured Python code
   - id: deans-list
-    image: education/rpi.jpg
+    image: education/rpi.png
     role: RPI
     name: Dean's List
     description: Had consistently high GPA for each semester

@@ -1,12 +1,14 @@
 (function(window, document) {
   function showAll(button) {
-    parent = document.getElementById('highlight-container');
-    parent.classList.add("showing-all");
+    document.getElementById('highlight-container').classList.add("showing-all");
   }
 
   function showHighlights(button) {
-    parent = document.getElementById('highlight-container');
-    parent.classList.remove("showing-all");
+    document.getElementById('highlight-container').classList.remove("showing-all");
+  }
+
+  function showImageCredits() {
+    document.getElementById('image-credits').classList.add("showing-all");
   }
 
   function print() {
@@ -18,6 +20,8 @@
       showAll(event.target);
     } else if (event.target.matches(".show-highlights, .show-highlights *")) {
       showHighlights(event.target);
+    } else if (event.target.matches("#image-credits-toggle, #image-credits-toggle *")) {
+      showImageCredits();
     } else if (event.target.matches("#print, #print *")) {
       print();
     }
