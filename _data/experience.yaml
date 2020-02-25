@@ -216,10 +216,31 @@ roles:
     startDate: 2011-07-18 # dead on, this was my start date
     endDate: 2013-09-15 # same as with the Bazel Release Process start date,
                         # since they're the same day
-    description: null
-    # * Web wallet testing
-    # * Helped organize team fun events on Whisky
-    # * PB: Guice wiring and integration testing support
+    shortDescription: >
+      Built and maintained test infrastructure for the Wallet web frontend.
+    description: >
+      Embedded test infrastructure support for the Wallet web frontend team,
+      working with related teams and fellow software engineers in test to make
+      sure developers can quickly and easily write and run tests.
+    achievements:
+      - id: integration-suite
+        description: >
+          Built and optimized a full-stack in-memory integration test, cutting
+          time-to-results 75% and allowing integration testing to run in the
+          continuous build for instant feedback.
+      - id: smoke-tests
+        description: >
+          Wrote an adapter allowing tests written for in-memory to be used on
+          the staging and production sites for fully automatic release
+          testing, halving the build cop checklist.
+      - id: fun-events
+        description: >
+          Organized fun events and wrote fun recruitment emails for the team,
+          keeping spirits high and the team close.
+      - id: guice
+        description: >
+          Received a peer bonus for teaching teammates how to work with Guice
+          wiring and the innards of the integration test infrastructure.
   - id: agora-games
     image: jobs/agora.gif
     name: Software Intern
