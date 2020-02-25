@@ -266,11 +266,11 @@ header rt {
 .role {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 0.5rem;
   position: relative;
-  padding-left: 3.1rem;
-  min-height: 3rem;
+  padding-left: 3.3rem;
+  min-height: 3.3rem;
 }
 
 .role .firstline {
@@ -295,7 +295,7 @@ header rt {
 .role .icon {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0.3rem;
   width: 3rem;
   height: 3rem;
 }
