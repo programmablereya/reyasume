@@ -44,16 +44,16 @@ module.exports = function(eleventyConfig) {
   //   negated IDs are lowlights and others are highlights
   // * an object, in which case its keys are used as an array (as above)m
   //   regardless of their values
+  // highlightsFirst is an optional boolean; if true, highlights are listed
+  // first, then lowlights, though order is preserved within those groups. If
+  // false or not specified, order is the same as the input.
   // Returns an array of objects, each of which has a one-to-one correspondence
   //   with an input item, using that object as its prototype and adding a
-  //   boolean "highlight" property. Order is preserved within highlights and
-  //   lowlights, but highlights are first in the list.
-  function identifyHighlights(itemList, filter) {
+  //   boolean "highlight" property.
+  function identifyHighlights(itemList, filter, highlightsFirst) {
     if (!Array.isArray(itemList)) {
       return itemList;
     }
-    const highlights = [];
-    const lowlights = [];
     if (!Array.isArray(filter)) {
       if (filter === true || filter === "all") {
         filter = ["all"]
@@ -63,16 +63,20 @@ module.exports = function(eleventyConfig) {
         filter = [];
       }
     }
-    itemList.forEach(function(item) {
+    const result = itemList.map(function(item) {
       if ((filter.includes("all")
               && !filter.includes("-" + item.id))
           || filter.includes(item.id)) {
-        highlights.push(inheritAndAdd(item, {highlight: true}));
+        return inheritAndAdd(item, {highlight: true});
       } else {
-        lowlights.push(inheritAndAdd(item, {highlight: false}));
+        return inheritAndAdd(item, {highlight: false});
       }
     });
-    return highlights.concat(lowlights);
+    if (highlightsFirst) {
+      return result.filter(function(item) { return item.highlight }).concat(result.filter(function(item) { return !item.highlight }));
+    } else {
+      return result;
+    }
   }
   eleventyConfig.addFilter("identifyHighlights", identifyHighlights);
 
