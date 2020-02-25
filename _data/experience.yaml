@@ -112,7 +112,7 @@ roles:
         description: >
           Thoroughly documented the existing release process and all changes
           being made to it and presented this information at a team summit,
-          sharply reducing sheriff confusion.
+          received a peer bonus.
       - id: sheriff
         description: >
           Consulted with sheriffs and acted as a go-to backup sheriff during
@@ -123,10 +123,20 @@ roles:
           Designed a new version of the release process using more modern
           infrastructure, avoiding version desync problems and allowing better
           testing.
+      - id: tooling
+        description: >
+          Automated release of sheriff tooling to developer workstations,
+          preventing use of out-of-date utilities and making diagnostics during
+          release significantly easier.
+      - id: release
+        description: >
+          Fixed, documented, and added checks for a rarely used process,
+          avoiding regular misunderstandings about how the process works.
       - id: mentor
         description: >
           Mentored a new team member in Python and internal release tools,
-          guided him through the implementation of the release process redesign.
+          guided him through implementing the redesign and becoming the new
+          expert. Received a peer bonus.
   - id: bazel-android
     image: jobs/google/bazel-old.png
     name: Software Engineer # II
@@ -137,13 +147,12 @@ roles:
                         # configurability full-time, since before that I was
                         # doing configurability as a side job and Android as a
                         # primary job
-    description: null
+    description: >
+
+    shortDescription: >
+
     # * Bazel Android support: native code, Jack, resource-split APKs, aidl tooling fixes
     #   * dynamic configs on aspects as part of Jack
-    # * PB: Big release process documentation
-    # * PB: Release process migration design help
-    # * PB: Python and release process teaching
-    # * PB: release process tools moved into binfs and hashbang
     # * PB: --legacy_android_support no-oping
     # * Spot: Consulted with Snapchat
   - id: google-tooling
