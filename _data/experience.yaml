@@ -16,6 +16,21 @@ roles:
       What did I do on Configurability?
       Besides _endless_ amounts of **trimming**?
     achievements:
+      # * PB: Personal postmortem for burnout
+      # * Organizer for BazelCon 2018
+      # * PB: Really easy to understand configuration trimming document ("one of the best docs I've read at Google")
+      # * PB: BazelCon 2018 office hours, copy editing, logistics
+      # * Worked to improve configurability team culture
+      # * Helped teach other Bazel developers about Bazel configurability - multiple Bazel U sessions
+      # * Bazel Android support: feature flags
+      #   * "This is so much better it hurts." - from attribute code refactoring as part of this
+      #   * Whitelisting mechanism as part of this, used by another developer for another feature
+      # * Bazel configurability: manual trimming design + rollout
+      #   * Test trimming (saved 5min+ recompile on every test flag change)
+      #   * Tagged trimming (design + migration tool + rollout - for example, a project with 5GB memory use that had ballooned to 10+ GB and OOM-ing could drop down to a very buildable 8GB)
+      # * Bazel configurability: automatic trimming research
+      #   * 2 years, ~60 pages of design documents, 2 different prototypes
+      # * PB: Helped others understand Bazel feature flags
       - id: trimming
         description: |
           I did _endless_ amounts of **trimming**.
@@ -41,6 +56,12 @@ roles:
       - id: teach
         description: |
           I taught everyone else how to be sheriff.
+    # * Bazel release process fixing and documentation
+    # * Bazel release process overhaul design
+    # * PB: Sheriffing (x3)
+    # * PB: Diagnosed & wrote tool to fix bug in test, reenabling releases
+    # * Perf: Engineering conscientiousness (doing the right thing)
+    # * Perf: Energetic and invested
   - id: bazel-android
     image: jobs/google/bazel-old.png
     name: Software Engineer # II
@@ -52,6 +73,14 @@ roles:
                         # doing configurability as a side job and Android as a
                         # primary job
     description: null
+    # * Bazel Android support: native code, Jack, resource-split APKs, aidl tooling fixes
+    #   * dynamic configs on aspects as part of Jack
+    # * PB: Big release process documentation
+    # * PB: Release process migration design help
+    # * PB: Python and release process teaching
+    # * PB: release process tools moved into binfs and hashbang
+    # * PB: --legacy_android_support no-oping
+    # * Spot: Consulted with Snapchat
   - id: google-tooling
     image: jobs/google/google.png
     name: Software Engineer in Test # II
@@ -65,6 +94,9 @@ roles:
     endDate: 2017-12-18 # dead on, this is the day I got a peer bonus for
                         # helping with turning this down
     description: null
+    # * account making service
+    # * PB: account creation tool (x3) + shutdown
+    # * Spot: Gaiamaker
   - id: wallet-testing
     image: jobs/google/wallet.png
     name: Software Engineer in Test # II
@@ -74,12 +106,16 @@ roles:
     endDate: 2013-09-15 # same as with the Bazel Release Process start date,
                         # since they're the same day
     description: null
+    # * Web wallet testing
+    # * Helped organize team fun events on Whisky
+    # * PB: Guice wiring and integration testing support
   - id: agora-games
     image: jobs/agora.gif
     name: Software Intern
     company: Agora Games
     startDate: 2010-11-04 # or thereabouts, this is when I was interviewing
     endDate: 2010-12-04 # as recorded in a livejournal comment...
+    # Agora Games: Ruby web testing
   - id: star-analytics
     image: jobs/staranalytics.png
     name: Software Intern
@@ -87,72 +123,27 @@ roles:
     company: Star Analytics
     startDate: 2010-04-15 # very approximate, got my IP phone/laptop around then
     endDate: 2011-05-15 # ish, I stopped this around when I left school
+    # Star Analytics C# frontend
   - id: misc
     image: jobs/blocks.svg
     name: Hobbyist
     team: Other (personal, school, side jobs etc.) Projects
     startDate: null
     endDate: null
-
-# ## Personal projects
-# * Personal blog website using Eleventy + Netlify
-# * Anki plugins for Japanese study
-# * Personal Docker server for mail and nextcloud
-# * Discord bots
-# * Assortment of handmade Minecraft plugins, self-run server
-# * PDF page-identification and splitting C# utility for helping at the church
-
-# ## RPI projects
-# * Python OpenGL-based game
-# * Rails based task management project
-
-# ## Regis projects
-# * C SDL-based game
-# * Java based student chat program
-
-# ## Google projects (tech)
-# * Web wallet testing
-# * account making service
-# * Bazel release process fixing and documentation
-# * Bazel Android support: native code, Jack, resource-split APKs, aidl tooling fixes
-#   * dynamic configs on aspects as part of Jack
-# * Bazel release process overhaul design
-# * Bazel Android support: feature flags
-#   * "This is so much better it hurts." - from attribute code refactoring as part of this
-#   * Whitelisting mechanism as part of this, used by another developer for another feature
-# * Bazel configurability: manual trimming design + rollout
-#   * Test trimming (saved 5min+ recompile on every test flag change)
-#   * Tagged trimming (design + migration tool + rollout - for example, a project with 5GB memory use that had ballooned to 10+ GB and OOM-ing could drop down to a very buildable 8GB)
-# * Bazel configurability: automatic trimming research
-#   * 2 years, ~60 pages of design documents, 2 different prototypes
-## Google projects (non-tech)
-# * Helped organize team fun events on Whisky
-# * Organizer for BazelCon 2018
-# * Worked to improve configurability team culture
-
-## Peer bonuses:
-# * Personal postmortem for burnout
-# * account creation tool (x3) + shutdown
-# * Guice wiring and integration testing support
-# * Sheriffing (x3)
-# * Diagnosed & wrote tool to fix bug in test, reenabling releases
-# * BazelCon 2018 office hours, copy editing, logistics
-# * Really easy to understand configuration trimming document ("one of the best docs I've read at Google")
-# * Big release process documentation
-# * Helped teach other Bazel developers about Bazel configurability - multiple Bazel U sessions
-# * Helped others understand Bazel feature flags
-# * Release process migration design help
-# * Python and release process teaching
-# * --legacy_android_support no-oping
-# * release process tools moved into binfs and hashbang
-# ## Spot bonuses:
-# * Consulted with Snapchat
-# * Gaiamaker
-
-# ## Misc. perf references
-# * Engineering conscientiousness (doing the right thing)
-# * Energetic and invested
-
-# Star Analytics C# frontend
-
-# Agora Games: Ruby web testing
+    # ## Personal projects
+    # * Personal blog website using Eleventy + Netlify
+    # * Anki plugins for Japanese study
+    # * Personal Docker server for mail and nextcloud
+    # * Discord bots
+    # * Assortment of handmade Minecraft plugins, self-run server
+    # * PDF page-identification and splitting C# utility for helping at the church
+    # * Python/GTK+ based rental property payment tracking
+    # * Javascript based dice roller for MSN+
+    # ## RPI projects
+    # * Python OpenGL-based game
+    # * Rails based task management project: https://github.com/thoughtbeam/flagship_tasks
+    # ## Regis projects
+    # * C SDL-based game
+    # * Python/GTK+ based assignment tracker
+    # * Python based encrypted chat program
+    # * Java based student chat program
