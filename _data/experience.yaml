@@ -12,23 +12,18 @@ roles:
     shortDescription: >
       Optimizations and flexibility for multiplatform builds for Bazel projects.
     description: >
-      Primary expert and contact point for _configuration trimming_, a major
-      overhaul of the internals of Bazel's multiplatform support which saves
-      build time, build artifact disk space and build graph memory by collapsing
-      redundant nodes together (e.g., deduplicating Java binaries which only
-      differ by the Python version they're built for).
+      Primary expert for _configuration trimming_, a major overhaul of Bazel's
+      multiplatform support to save time and memory for users by collapsing
+      equivalent nodes in the build graph.
     achievements:
       - id: feature-flags
         description: >
-          Designed and built a feature flag system for Bazel which allows
-          Android developers to toggle build dependencies without needing to
-          create parallel trees. Used by ~50 Android teams within Google, with
-          more asking to have the feature enabled weekly.
+          Designed and built a feature flag system for Bazel, used by ~50
+          Android teams within Google with more asking to be enabled weekly.
       - id: whitelisting
         description: >
           Designed and built a mechanism for controlling rollouts of Bazel
-          features based on build package for use with feature flags, which
-          was quickly adopted by other subteams within Bazel.
+          features, which was quickly adopted by other subteams within Bazel.
       - id: attribute-refactor
         description: >
           Refactored Bazel's attribute support, prompting a code owner to
@@ -40,34 +35,39 @@ roles:
           engineer over a day's builds.
       - id: tagged-trimming
         description: >
-          Implemented, built a fully automated migration tool for and consulted
-          with users to roll out manual trimming to get Android developers
-          reduced memory use immediately, saving multiple gigabytes of memory
-          per build and preventing OOM conditions for larger builds.
+          Implemented manual trimming to get Android developers
+          reduced memory use immediately, saving multiple GB of memory
+          per build and avoiding OOM conditions.
+      - id: tagged-trimming-rollout
+        description: >
+          Built a fully automated Python-based migration tool for and consulted
+          with users to roll out manual trimming, saving hours of tedious manual
+          corrections per project.
       - id: auto-trimming
         description: >
-          Researched options for automatic trimming, wrote over 60 pages of
-          design documents proving the viability of trimming and the tradeoffs
-          of different options, built a TypeScript/Angular2-based prototype
-          to gather data on builds and eventually integrated a prototype into
-          Bazel.
+          Researched the automatic trimming problem and wrote over 60
+          pages of design documents proving the viability of trimming and the
+          tradeoffs of different options.
+      - id: trimming-prototype
+        description: >
+          Built a TypeScript/Angular2-based prototype to gather data on the
+          tradeoffs of different trimming algorithms with real builds and
+          integrated a prototype into Bazel.
       - id: bazel-u
         description: >
           Ran multiple talks for the Bazel team about trimming and feature
-          flags, consulted across Bazel and with other teams on the viability of
-          trimming techniques for different use cases, and received a peer bonus
-          for my expertise.
+          flags, consulted with individual developers across teams, and received
+          peer bonus for my expertise.
       - id: trimming-metaphors
         description: >
-          Wrote a document explaining the complex concepts, techniques, and
-          history of trimming in an easy-to-read manner and received a peer
-          bonus describing it as "one of the best docs I've read at Google."
+          Wrote an easy-to-read introduction to the complexities of trimming and
+          received a peer bonus describing it as "one of the best docs I've read
+          at Google."
       - id: bazelcon
         description: >
-          Solicited experts for office hours for BazelCon 2018 and managed rooms
-          and experts day-of, allowing the show to go on despite last-minute
-          loss of our planned venue and receiving a peer bonus from the head
-          organizer.
+          Solicited experts for BazelCon 2018, coordinated rooms day-of, made
+          office hours work despite last-minute loss of venue. Received a peer
+          bonus from the head organizer.
       - id: personal-postmortem
         description: >
           Wrote, gave a talk on, and received a peer bonus for a document
