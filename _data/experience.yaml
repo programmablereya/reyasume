@@ -19,7 +19,7 @@ roles:
       - id: feature-flags
         description: >
           Designed and built a feature flag system for Bazel, used by ~50
-          Android teams within Google with more asking to be enabled weekly.
+          Android teams within Google, with more asking to be enabled weekly.
       - id: whitelisting
         description: >
           Designed and built a mechanism for controlling rollouts of Bazel
@@ -57,7 +57,7 @@ roles:
         description: >
           Ran multiple talks for the Bazel team about trimming and feature
           flags, consulted with individual developers across teams, and received
-          peer bonus for my expertise.
+          a peer bonus for my expertise.
       - id: trimming-metaphors
         description: >
           Wrote an easy-to-read introduction to the complexities of trimming and
@@ -65,9 +65,9 @@ roles:
           at Google."
       - id: bazelcon
         description: >
-          Solicited experts for BazelCon 2018, coordinated rooms day-of, made
-          office hours work despite last-minute loss of venue. Received a peer
-          bonus from the head organizer.
+          Solicited experts for BazelCon 2018, coordinated rooms day-of, and
+          made office hours work despite last-minute loss of venue. Received a
+          peer bonus from the head organizer.
       - id: personal-postmortem
         description: >
           Wrote, gave a talk on, and received a peer bonus for a document
@@ -75,11 +75,11 @@ roles:
       - id: team-culture
         description: >
           Proposed improvements to team culture, ran meetings on the subject,
-          consulted with management and gathered feedback fro team members.
+          consulted with management and gathered feedback from team members.
       - id: kotlin
         description: >
-          Consulted with Kotlin team at Google about the possibility of using
-          Kotlin within Bazel.
+          Consulted with the Kotlin team at Google about the possibility of
+          using Kotlin within Bazel.
 
   - id: bazel-release
     image: jobs/google/bazel-old.png
