@@ -46,8 +46,8 @@ roles:
       - id: auto-trimming
         description: >
           Researched the automatic trimming problem and wrote over 60
-          pages of design documents proving the viability of trimming and the
-          tradeoffs of different options.
+          pages of design documents proving
+          [the viability of trimming and the tradeoffs of different options](https://docs.google.com/document/d/1MHq-PKTEhTj7uI185Lm7HSFJK0xSssaY3ZTz7Djq-6A/edit).
       - id: trimming-prototype
         description: >
           Built a TypeScript/Angular2-based prototype to gather data on the
@@ -60,9 +60,10 @@ roles:
           a peer bonus for my expertise.
       - id: trimming-metaphors
         description: >
-          Wrote an easy-to-read introduction to the complexities of trimming and
-          received a peer bonus describing it as "one of the best docs I've read
-          at Google."
+          Wrote an easy-to-read
+          [introduction to the complexities of trimming](https://docs.google.com/document/d/1J6yvbe0Rt-KLGzVtW9Pt0YjPB8R_tQQ7zy8jIjay7l0/edit)
+          and received a peer bonus describing it as "one of the best docs I've
+          read at Google."
       - id: bazelcon
         description: >
           Solicited experts for BazelCon 2018, coordinated rooms day-of, and
@@ -219,9 +220,9 @@ roles:
     shortDescription: >
       Built and maintained test infrastructure for the Wallet web frontend.
     description: >
-      Embedded test infrastructure support for the Wallet web frontend team,
-      working with related teams and fellow software engineers in test to make
-      sure developers can quickly and easily write and run tests.
+      Embedded test infrastructure support for the Wallet web frontend team;
+      worked with related teams and fellow software engineers in test to make
+      sure developers could quickly and easily write and run tests.
     achievements:
       - id: page-objects
         description: >
@@ -276,20 +277,64 @@ roles:
     team: Other (personal, school, side jobs etc.) Projects
     startDate: null
     endDate: null
-    # ## Personal projects
-    # * Personal blog website using Eleventy + Netlify
-    # * Anki plugins for Japanese study
-    # * Personal Docker server for mail and nextcloud
-    # * Discord bots
-    # * Assortment of handmade Minecraft plugins, self-run server
-    # * PDF page-identification and splitting C# utility for helping at the church
-    # * Python/GTK+ based rental property payment tracking
-    # * Javascript based dice roller for MSN+
-    # ## RPI projects
-    # * Python OpenGL-based game
-    # * Rails based task management project: https://github.com/thoughtbeam/flagship_tasks
-    # ## Regis projects
-    # * C SDL-based game
-    # * Python/GTK+ based assignment tracker
-    # * Python based encrypted chat program
-    # * Java based student chat program
+    achievements:
+      - id: blog
+        description: >
+          Built a [personal blog website](https://blog.reya.zone) using Eleventy
+          and Netlify, and hand-coded the theme and filters etc. in
+          HTML, JS, and CSS. (Not unlike this resume!)
+      - id: anki
+        description: >
+          Built Python [Anki plugins](https://github.com/programmablereya/wani-anki)
+          to ease my Japanese study, synchronizing learned kanji from WaniKani
+          and enabling one-click swapping of fields in downloaded cards.
+      - id: discord
+        description: >
+          Built an extensible Kotlin-based Discord chatbot for playing Codenames
+          with friends.
+      - id: minecraft
+        description: >
+          Built several Minecraft plugins, both in Java and in Kotlin, for use
+          on my self-hosted server.
+      - id: church
+        description: >
+          Built a C#-based tool for splitting out the pages of a PDF which
+          contain the IDs from a list, saving the church hours of manual work
+          printing only those pages.
+      - id: rental
+        description: >
+          Built Python/PyGTK/SQLite based rental property payment tracking
+          software and migrated the old Visual Basic version to it, permitting
+          it to keep functioning after the old computer died.
+      - id: dice-roller
+        description: >
+          Built a Javascript-based dice-rolling chatbot for MSN+, enabling my
+          friends and I to play D&D over the internet easily.
+      - id: flagship-tasks
+        description: >
+          Built a [task management project](https://github.com/thoughtbeam/flagship_tasks)
+          in Ruby on Rails for an engineering capstone project at RPI.
+      - id: assignments
+        description: >
+          Built an assignment tracker in Python/PyGTK for managing work at
+          RPI.
+      - id: extreme-pi-2
+        description: >
+          Built a Python/PyOpenGL based video game for a Graphics class project
+          at RPI.
+      - id: extreme-pi
+        description: >
+          Built an SDL game in raw C for a capstone project in high school.
+      - id: encrypted-chat
+        description: >
+          Built an obfuscated chat program in Python allowing communication
+          between students over the school networks in high school.
+      - id: vectors
+        description: >
+          Built a TI-BASIC based vector calculation program which was used by my
+          entire high school class to make vector calculations easier in
+          Physics class.
+      - id: java-chat
+        description: >
+          Built a Java-based chat program allowing communication between
+          students over the school networks in high school.
