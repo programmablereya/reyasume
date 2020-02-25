@@ -12,31 +12,75 @@ roles:
     shortDescription: |
       Optimizations and flexibility for multiplatform builds for Bazel projects.
     description: |
-      Let's see here.
-      What did I do on Configurability?
-      Besides _endless_ amounts of **trimming**?
+      Primary expert and contact point for _configuration trimming_, a major
+      overhaul of the internals of Bazel's multiplatform support which saves
+      build time, build artifact disk space and build graph memory by collapsing
+      redundant nodes together (e.g., deduplicating Java binaries which only
+      differ by the Python version they're built for).
     achievements:
-      # * PB: Personal postmortem for burnout
-      # * Organizer for BazelCon 2018
-      # * PB: Really easy to understand configuration trimming document ("one of the best docs I've read at Google")
-      # * PB: BazelCon 2018 office hours, copy editing, logistics
-      # * Worked to improve configurability team culture
-      # * Helped teach other Bazel developers about Bazel configurability - multiple Bazel U sessions
-      # * Bazel Android support: feature flags
-      #   * "This is so much better it hurts." - from attribute code refactoring as part of this
-      #   * Whitelisting mechanism as part of this, used by another developer for another feature
-      # * Bazel configurability: manual trimming design + rollout
-      #   * Test trimming (saved 5min+ recompile on every test flag change)
-      #   * Tagged trimming (design + migration tool + rollout - for example, a project with 5GB memory use that had ballooned to 10+ GB and OOM-ing could drop down to a very buildable 8GB)
-      # * Bazel configurability: automatic trimming research
-      #   * 2 years, ~60 pages of design documents, 2 different prototypes
-      # * PB: Helped others understand Bazel feature flags
-      - id: trimming
+      - id: feature-flags
         description: |
-          I did _endless_ amounts of **trimming**.
-      - id: other
+          Designed and built a feature flag system for Bazel which allows
+          Android developers to toggle build dependencies without needing to
+          create parallel trees. Used by ~50 Android teams within Google, with
+          more asking to have the feature enabled weekly.
+      - id: whitelisting
         description: |
-          I did other stuff, **too**.
+          Designed and built a mechanism for controlling rollouts of Bazel
+          features based on build package for use with feature flags, which
+          was quickly adopted by other subteams within Bazel.
+      - id: attribute-refactor
+        description: |
+          Refactored Bazel's attribute support, prompting a code owner to
+          describe the result as "so much better it hurts."
+      - id: test-trimming
+        description: |
+          Sped up developer build/test switching, saving 2min+ reanalysis on
+          each switch, adding up to an hour or more of wait time saved per
+          engineer over a day's builds.
+      - id: tagged-trimming
+        description: |
+          Implemented, built a fully automated migration tool for and consulted
+          with users to roll out manual trimming to get Android developers
+          reduced memory use immediately, saving multiple gigabytes of memory
+          per build and preventing OOM conditions for larger builds.
+      - id: auto-trimming
+        description: |
+          Researched options for automatic trimming, wrote over 60 pages of
+          design documents proving the viability of trimming and the tradeoffs
+          of different options, built a TypeScript/Angular2-based prototype
+          to gather data on builds and eventually integrated a prototype into
+          Bazel.
+      - id: bazel-u
+        description: |
+          Ran multiple talks for the Bazel team about trimming and feature
+          flags, consulted across Bazel and with other teams on the viability of
+          trimming techniques for different use cases, and received a peer bonus
+          for my expertise.
+      - id: trimming-metaphors
+        description: |
+          Wrote a document explaining the complex concepts, techniques, and
+          history of trimming in an easy-to-read manner and received a peer
+          bonus describing it as "one of the best docs I've read at Google."
+      - id: bazelcon
+        description: |
+          Solicited experts for office hours for BazelCon 2018 and managed rooms
+          and experts day-of, allowing the show to go on despite last-minute
+          loss of our planned venue and receiving a peer bonus from the head
+          organizer.
+      - id: personal-postmortem
+        description: |
+          Wrote, gave a talk on, and received a peer bonus for a document
+          speaking frankly about emotional safety on the team.
+      - id: team-culture
+        description: |
+          Proposed improvements to team culture, ran meetings on the subject,
+          consulted with management and gathered feedback fro team members.
+      - id: kotlin
+        description: |
+          Consulted with Kotlin team at Google about the possibility of using
+          Kotlin within Bazel.
+
   - id: bazel-release
     image: jobs/google/bazel-old.png
     name: Software Engineer in Test # II
