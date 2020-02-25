@@ -223,6 +223,11 @@ roles:
       working with related teams and fellow software engineers in test to make
       sure developers can quickly and easily write and run tests.
     achievements:
+      - id: page-objects
+        description: >
+          Built a framework based on WebDriver PageObjects allowing developers
+          to write tests as if giving instructions, making tests more stable,
+          less buggy, and shorter.
       - id: integration-suite
         description: >
           Built and optimized a full-stack in-memory integration test, cutting
@@ -247,7 +252,11 @@ roles:
     company: Agora Games
     startDate: 2010-11-04 # or thereabouts, this is when I was interviewing
     endDate: 2010-12-04 # as recorded in a livejournal comment...
-    # Agora Games: Ruby web testing
+    shortDescription: >
+      Wrote browser tests for Rails-based web services.
+    description: >
+      Wrote Cucumber and Selenium-based browser tests for Rails-based web
+      services.
   - id: star-analytics
     image: jobs/staranalytics.png
     name: Software Intern
@@ -255,7 +264,12 @@ roles:
     company: Star Analytics
     startDate: 2010-04-15 # very approximate, got my IP phone/laptop around then
     endDate: 2011-05-15 # ish, I stopped this around when I left school
-    # Star Analytics C# frontend
+    shortDescription: >
+      Wrote a C#-based UI for the Star Analytics task automation service.
+    description: >
+      Developed a C#-based user-friendly GUI for building one's own custom tasks
+      and processes, allowing even those without coding knowledge to use this
+      feature.
   - id: misc
     image: jobs/blocks.svg
     name: Hobbyist
