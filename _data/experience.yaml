@@ -9,19 +9,79 @@ roles:
                           # started getting to work on reviewing configurability
                           # changes and getting up to speed on this team
     endDate: 2019-10-04 # dead on, this was my last day at Google
-    shortDescription: |
+    shortDescription: >
       Optimizations and flexibility for multiplatform builds for Bazel projects.
-    description: |
-      Let's see here.
-      What did I do on Configurability?
-      Besides _endless_ amounts of **trimming**?
+    description: >
+      Primary expert for _configuration trimming_, a major overhaul of Bazel's
+      multiplatform support to save time and memory for users by collapsing
+      equivalent nodes in the build graph.
     achievements:
-      - id: trimming
-        description: |
-          I did _endless_ amounts of **trimming**.
-      - id: other
-        description: |
-          I did other stuff, **too**.
+      - id: feature-flags
+        description: >
+          Designed and built a feature flag system for Bazel, used by ~50
+          Android teams within Google, with more asking to be enabled weekly.
+      - id: whitelisting
+        description: >
+          Designed and built a mechanism for controlling rollouts of Bazel
+          features, which was quickly adopted by other subteams within Bazel.
+      - id: attribute-refactor
+        description: >
+          Refactored Bazel's attribute support, prompting a code owner to
+          describe the result as "so much better it hurts."
+      - id: test-trimming
+        description: >
+          Sped up developer build/test switching, saving 2min+ reanalysis on
+          each switch, adding up to an hour or more of wait time saved per
+          engineer over a day's builds.
+      - id: tagged-trimming
+        description: >
+          Implemented manual trimming to get Android developers
+          reduced memory use immediately, saving multiple GB of memory
+          per build and avoiding OOM conditions.
+      - id: tagged-trimming-rollout
+        description: >
+          Built a fully automated Python-based migration tool for and consulted
+          with users to roll out manual trimming, saving hours of tedious manual
+          corrections per project.
+      - id: auto-trimming
+        description: >
+          Researched the automatic trimming problem and wrote over 60
+          pages of design documents proving
+          [the viability of trimming and the tradeoffs of different options](https://docs.google.com/document/d/1MHq-PKTEhTj7uI185Lm7HSFJK0xSssaY3ZTz7Djq-6A/edit).
+      - id: trimming-prototype
+        description: >
+          Built a TypeScript/Angular2-based prototype to gather data on the
+          tradeoffs of different trimming algorithms with real builds and
+          integrated a prototype into Bazel.
+      - id: bazel-u
+        description: >
+          Ran multiple talks for the Bazel team about trimming and feature
+          flags, consulted with individual developers across teams, and received
+          a peer bonus for my expertise.
+      - id: trimming-metaphors
+        description: >
+          Wrote an easy-to-read
+          [introduction to the complexities of trimming](https://docs.google.com/document/d/1J6yvbe0Rt-KLGzVtW9Pt0YjPB8R_tQQ7zy8jIjay7l0/edit)
+          and received a peer bonus describing it as "one of the best docs I've
+          read at Google."
+      - id: bazelcon
+        description: >
+          Solicited experts for BazelCon 2018, coordinated rooms day-of, and
+          made office hours work despite last-minute loss of venue. Received a
+          peer bonus from the head organizer.
+      - id: personal-postmortem
+        description: >
+          Wrote, gave a talk on, and received a peer bonus for a document
+          speaking frankly about emotional safety on the team.
+      - id: team-culture
+        description: >
+          Proposed improvements to team culture, ran meetings on the subject,
+          consulted with management and gathered feedback from team members.
+      - id: kotlin
+        description: >
+          Consulted with the Kotlin team at Google about the possibility of
+          using Kotlin within Bazel.
+
   - id: bazel-release
     image: jobs/google/bazel-old.png
     name: Software Engineer in Test # II
@@ -32,15 +92,52 @@ roles:
                           # Q3 2014 - but it hadn't gotten cold yet
     endDate: 2017-06-15 # did I truly ever stop working on the release process?
                         # however, this is around when it stopped being my job
-    description: "The long version is, I did so much freaking junk on this thing."
-    shortDescription: "The short version is, a lot."
+    shortDescription: >
+      Migrations, stability, and features for the internal release process of
+      Bazel (a.k.a. Blaze).
+    description: >
+      Local expert on Google-internal release and testing tools, primary expert
+      on the release process for the Google-internal version of Bazel (a.k.a.
+      Blaze).
     achievements:
+      - id: testability
+        description: >
+          Updated old release Bash scripts to allow for testing of changes
+          without risking the stability of the release.
+      - id: autorerun
+        description: >
+          Automated the rerunning of all tests across Google's continuous
+          builds, saving sheriffs the time and hassle of manually checking the
+          results and starting reruns.
+      - id: documentation
+        description: >
+          Thoroughly documented the existing release process and all changes
+          being made to it and presented this information at a team summit,
+          received a peer bonus.
+      - id: sheriff
+        description: >
+          Consulted with sheriffs and acted as a go-to backup sheriff during
+          especially difficult situations. Received 4 peer bonuses for different
+          key moments of help.
+      - id: redesign
+        description: >
+          Designed a new version of the release process using more modern
+          infrastructure, avoiding version desync problems and allowing better
+          testing.
+      - id: tooling
+        description: >
+          Automated release of sheriff tooling to developer workstations,
+          preventing use of out-of-date utilities and making diagnostics during
+          release significantly easier.
+      - id: release
+        description: >
+          Fixed, documented, and added checks for a rarely used process,
+          avoiding regular misunderstandings about how the process works.
       - id: mentor
-        description: |
-          I taught Florian the secrets of releases.
-      - id: teach
-        description: |
-          I taught everyone else how to be sheriff.
+        description: >
+          Mentored a new team member in Python and internal release tools,
+          guided him through implementing the redesign and becoming the new
+          expert. Received a peer bonus.
   - id: bazel-android
     image: jobs/google/bazel-old.png
     name: Software Engineer # II
@@ -51,7 +148,28 @@ roles:
                         # configurability full-time, since before that I was
                         # doing configurability as a side job and Android as a
                         # primary job
-    description: null
+    description: >
+      Built features relating to compiling Android apps within Bazel.
+    achievements:
+      - id: aidl
+        description: >
+          Fixed a long-standing bug in Bazel's AIDL support, correcting
+          incorrect builds, and migrated all Google Android projects, saving
+          teams time and bugs.
+      - id: native
+        description: >
+          Upgraded Bazel's Android native code support to allow for automatic
+          compilation within Bazel, avoiding the need for users to implement it
+          in a separate system.
+      - id: jack
+        description: >
+          Added support for the Jack and Jill compilers to Bazel, allowing the
+          Jack team to instantly test their work across the real projects within
+          Google.
+      - id: snapchat
+        description: >
+          Consulted with a major App Engine client and helped their developers
+          get set up to use Bazel for their Android app. Received a spot bonus.
   - id: google-tooling
     image: jobs/google/google.png
     name: Software Engineer in Test # II
@@ -64,7 +182,33 @@ roles:
                           # the project around midway through Q1
     endDate: 2017-12-18 # dead on, this is the day I got a peer bonus for
                         # helping with turning this down
-    description: null
+    shortDescription: >
+      Built and maintained parts of a test-account creation service.
+    description: >
+      Built and maintained parts of an internal test-account creation service
+      which was used by several teams throughout Google for easy isolated
+      integration testing. At its peak, it created and deleted hundreds of
+      accounts every minute.
+    achievements:
+      - id: wallet-profile
+        description: >
+          Installed a new account template on the account creation service,
+          allowing users to create Google accounts which already had Wallet
+          accounts set up.
+      - id: dartui
+        description: >
+          Rewrote the existing hacky Javascript-and-jQuery UI for an internal
+          user in clean, well-tested Dart, allowing for fully automated
+          push-on-green releases.
+      - id: maintenance
+        description: >
+          Investigated bug reports, coordinated with other teams and remained
+          on-call to keep users' tests running. Received three peer bonuses and
+          a spot bonus.
+      - id: shutdown
+        description: >
+          Received a peer bonus for assisting with the shutdown and migration to
+          a newer service owned by the account team.
   - id: wallet-testing
     image: jobs/google/wallet.png
     name: Software Engineer in Test # II
@@ -73,13 +217,47 @@ roles:
     startDate: 2011-07-18 # dead on, this was my start date
     endDate: 2013-09-15 # same as with the Bazel Release Process start date,
                         # since they're the same day
-    description: null
+    shortDescription: >
+      Built and maintained test infrastructure for the Wallet web frontend.
+    description: >
+      Embedded test infrastructure support for the Wallet web frontend team;
+      worked with related teams and fellow software engineers in test to make
+      sure developers could quickly and easily write and run tests.
+    achievements:
+      - id: page-objects
+        description: >
+          Built a framework based on WebDriver PageObjects allowing developers
+          to write tests as if giving instructions, making tests more stable,
+          less buggy, and shorter.
+      - id: integration-suite
+        description: >
+          Built and optimized a full-stack in-memory integration test, cutting
+          time-to-results 75% and allowing integration testing to run in the
+          continuous build for instant feedback.
+      - id: smoke-tests
+        description: >
+          Wrote an adapter allowing tests written for in-memory to be used on
+          the staging and production sites for fully automatic release
+          testing, halving the build cop checklist.
+      - id: fun-events
+        description: >
+          Organized fun events and wrote fun recruitment emails for the team,
+          keeping spirits high and the team close.
+      - id: guice
+        description: >
+          Received a peer bonus for teaching teammates how to work with Guice
+          wiring and the innards of the integration test infrastructure.
   - id: agora-games
     image: jobs/agora.gif
     name: Software Intern
     company: Agora Games
     startDate: 2010-11-04 # or thereabouts, this is when I was interviewing
     endDate: 2010-12-04 # as recorded in a livejournal comment...
+    shortDescription: >
+      Wrote browser tests for Rails-based web services.
+    description: >
+      Wrote Cucumber and Selenium-based browser tests for Rails-based web
+      services.
   - id: star-analytics
     image: jobs/staranalytics.png
     name: Software Intern
@@ -87,72 +265,76 @@ roles:
     company: Star Analytics
     startDate: 2010-04-15 # very approximate, got my IP phone/laptop around then
     endDate: 2011-05-15 # ish, I stopped this around when I left school
+    shortDescription: >
+      Wrote a C#-based UI for the Star Analytics task automation service.
+    description: >
+      Developed a C#-based user-friendly GUI for building one's own custom tasks
+      and processes, allowing even those without coding knowledge to use this
+      feature.
   - id: misc
     image: jobs/blocks.svg
     name: Hobbyist
     team: Other (personal, school, side jobs etc.) Projects
     startDate: null
     endDate: null
-
-# ## Personal projects
-# * Personal blog website using Eleventy + Netlify
-# * Anki plugins for Japanese study
-# * Personal Docker server for mail and nextcloud
-# * Discord bots
-# * Assortment of handmade Minecraft plugins, self-run server
-# * PDF page-identification and splitting C# utility for helping at the church
-
-# ## RPI projects
-# * Python OpenGL-based game
-# * Rails based task management project
-
-# ## Regis projects
-# * C SDL-based game
-# * Java based student chat program
-
-# ## Google projects (tech)
-# * Web wallet testing
-# * account making service
-# * Bazel release process fixing and documentation
-# * Bazel Android support: native code, Jack, resource-split APKs, aidl tooling fixes
-#   * dynamic configs on aspects as part of Jack
-# * Bazel release process overhaul design
-# * Bazel Android support: feature flags
-#   * "This is so much better it hurts." - from attribute code refactoring as part of this
-#   * Whitelisting mechanism as part of this, used by another developer for another feature
-# * Bazel configurability: manual trimming design + rollout
-#   * Test trimming (saved 5min+ recompile on every test flag change)
-#   * Tagged trimming (design + migration tool + rollout - for example, a project with 5GB memory use that had ballooned to 10+ GB and OOM-ing could drop down to a very buildable 8GB)
-# * Bazel configurability: automatic trimming research
-#   * 2 years, ~60 pages of design documents, 2 different prototypes
-## Google projects (non-tech)
-# * Helped organize team fun events on Whisky
-# * Organizer for BazelCon 2018
-# * Worked to improve configurability team culture
-
-## Peer bonuses:
-# * Personal postmortem for burnout
-# * account creation tool (x3) + shutdown
-# * Guice wiring and integration testing support
-# * Sheriffing (x3)
-# * Diagnosed & wrote tool to fix bug in test, reenabling releases
-# * BazelCon 2018 office hours, copy editing, logistics
-# * Really easy to understand configuration trimming document ("one of the best docs I've read at Google")
-# * Big release process documentation
-# * Helped teach other Bazel developers about Bazel configurability - multiple Bazel U sessions
-# * Helped others understand Bazel feature flags
-# * Release process migration design help
-# * Python and release process teaching
-# * --legacy_android_support no-oping
-# * release process tools moved into binfs and hashbang
-# ## Spot bonuses:
-# * Consulted with Snapchat
-# * Gaiamaker
-
-# ## Misc. perf references
-# * Engineering conscientiousness (doing the right thing)
-# * Energetic and invested
-
-# Star Analytics C# frontend
-
-# Agora Games: Ruby web testing
+    achievements:
+      - id: blog
+        description: >
+          Built a [personal blog website](https://blog.reya.zone) using Eleventy
+          and Netlify, and hand-coded the theme and filters etc. in
+          HTML, JS, and CSS. (Not unlike this resume!)
+      - id: anki
+        description: >
+          Built Python [Anki plugins](https://github.com/programmablereya/wani-anki)
+          to ease my Japanese study, synchronizing learned kanji from WaniKani
+          and enabling one-click swapping of fields in downloaded cards.
+      - id: discord
+        description: >
+          Built an extensible Kotlin-based Discord chatbot for playing Codenames
+          with friends.
+      - id: minecraft
+        description: >
+          Built several Minecraft plugins, both in Java and in Kotlin, for use
+          on my self-hosted server.
+      - id: church
+        description: >
+          Built a C#-based tool for splitting out the pages of a PDF which
+          contain the IDs from a list, saving the church hours of manual work
+          printing only those pages.
+      - id: rental
+        description: >
+          Built Python/PyGTK/SQLite based rental property payment tracking
+          software and migrated the old Visual Basic version to it, permitting
+          it to keep functioning after the old computer died.
+      - id: dice-roller
+        description: >
+          Built a Javascript-based dice-rolling chatbot for MSN+, enabling my
+          friends and I to play D&D over the internet easily.
+      - id: flagship-tasks
+        description: >
+          Built a [task management project](https://github.com/thoughtbeam/flagship_tasks)
+          in Ruby on Rails for an engineering capstone project at RPI.
+      - id: assignments
+        description: >
+          Built an assignment tracker in Python/PyGTK for managing work at
+          RPI.
+      - id: extreme-pi-2
+        description: >
+          Built a Python/PyOpenGL based video game for a Graphics class project
+          at RPI.
+      - id: extreme-pi
+        description: >
+          Built an SDL game in raw C for a capstone project in high school.
+      - id: encrypted-chat
+        description: >
+          Built an obfuscated chat program in Python allowing communication
+          between students over the school networks in high school.
+      - id: vectors
+        description: >
+          Built a TI-BASIC based vector calculation program which was used by my
+          entire high school class to make vector calculations easier in
+          Physics class.
+      - id: java-chat
+        description: >
+          Built a Java-based chat program allowing communication between
+          students over the school networks in high school.

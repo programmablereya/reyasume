@@ -1,4 +1,11 @@
 @media only print {
+  a {
+    text-decoration: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+
   footer, .buttons, .show-all, .show-highlights, #print, .highlight-icon {
     display: none;
   }
