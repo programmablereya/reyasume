@@ -181,10 +181,33 @@ roles:
                           # the project around midway through Q1
     endDate: 2017-12-18 # dead on, this is the day I got a peer bonus for
                         # helping with turning this down
-    description: null
-    # * account making service
-    # * PB: account creation tool (x3) + shutdown
-    # * Spot: Gaiamaker
+    shortDescription: >
+      Built and maintained parts of a test-account creation service.
+    description: >
+      Built and maintained parts of an internal test-account creation service
+      which was used by several teams throughout Google for easy isolated
+      integration testing. At its peak, it created and deleted hundreds of
+      accounts every minute.
+    achievements:
+      - id: wallet-profile
+        description: >
+          Installed a new account template on the account creation service,
+          allowing users to create Google accounts which already had Wallet
+          accounts set up.
+      - id: dartui
+        description: >
+          Rewrote the existing hacky Javascript-and-jQuery UI for an internal
+          user in clean, well-tested Dart, allowing for fully automated
+          push-on-green releases.
+      - id: maintenance
+        description: >
+          Investigated bug reports, coordinated with other teams and remained
+          on-call to keep users' tests running. Received three peer bonuses and
+          a spot bonus.
+      - id: shutdown
+        description: >
+          Received a peer bonus for assisting with the shutdown and migration to
+          a newer service owned by the account team.
   - id: wallet-testing
     image: jobs/google/wallet.png
     name: Software Engineer in Test # II
