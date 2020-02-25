@@ -148,13 +148,27 @@ roles:
                         # doing configurability as a side job and Android as a
                         # primary job
     description: >
-
-    shortDescription: >
-
-    # * Bazel Android support: native code, Jack, resource-split APKs, aidl tooling fixes
-    #   * dynamic configs on aspects as part of Jack
-    # * PB: --legacy_android_support no-oping
-    # * Spot: Consulted with Snapchat
+      Built features relating to compiling Android apps within Bazel.
+    achievements:
+      - id: aidl
+        description: >
+          Fixed a long-standing bug in Bazel's AIDL support, correcting
+          incorrect builds, and migrated all Google Android projects, saving
+          teams time and bugs.
+      - id: native
+        description: >
+          Upgraded Bazel's Android native code support to allow for automatic
+          compilation within Bazel, avoiding the need for users to implement it
+          in a separate system.
+      - id: jack
+        description: >
+          Added support for the Jack and Jill compilers to Bazel, allowing the
+          Jack team to instantly test their work across the real projects within
+          Google.
+      - id: snapchat
+        description: >
+          Consulted with a major App Engine client and helped their developers
+          get set up to use Bazel for their Android app. Received a spot bonus.
   - id: google-tooling
     image: jobs/google/google.png
     name: Software Engineer in Test # II
