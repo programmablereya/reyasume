@@ -166,7 +166,7 @@ roles:
           Added support for the Jack and Jill compilers to Bazel, allowing the
           Jack team to instantly test their work across the real projects within
           Google.
-      - id: snapchat
+      - id: client
         description: >
           Consulted with a major App Engine client and helped their developers
           get set up to use Bazel for their Android app. Received a spot bonus.
