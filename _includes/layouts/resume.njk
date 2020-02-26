@@ -13,10 +13,6 @@ layout: layouts/base.njk
       {% include "components/resume/contact-section.njk" %}
     </section>
 
-    <section id="education" class="right">
-      {% include "components/resume/education-section.njk" %}
-    </section>
-
     <section id="about" class="right">
       <h2>About</h2>
       {{ layoutContent | safe }}
@@ -32,6 +28,10 @@ layout: layouts/base.njk
 
     <section id="awards" class="left">
       {% include "components/resume/award-section.njk" %}
+    </section>
+
+    <section id="education" class="right">
+      {% include "components/resume/education-section.njk" %}
     </section>
   </div>
 </div>
