@@ -9,6 +9,6 @@
     {% include "components/resume/highlight-icon.njk" %}
   {% endif %}
 </div>
-{% for category in skillCategoriesFiltered %}
+{% for category in skillCategoriesFiltered | sortHighlightsFirst %}
   {% include "components/resume/skill-subcategory.njk" %}
 {% endfor %}

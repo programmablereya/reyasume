@@ -10,7 +10,7 @@
   {% endif %}
 </div>
 <ul class="awards">
-  {% for award in awardsFiltered %}
+  {% for award in awardsFiltered | sortHighlightsFirst %}
     {% include "components/resume/award.njk" %}
   {% endfor %}
 </ul>

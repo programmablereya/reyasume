@@ -10,7 +10,7 @@
   {% endif %}
 </div>
 <ul class="programs">
-  {% for program in educationFiltered %}
+  {% for program in educationFiltered | sortHighlightsFirst %}
     {% include "components/resume/education.njk" %}
   {% endfor %}
 </ul>

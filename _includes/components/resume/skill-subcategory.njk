@@ -3,7 +3,7 @@
 <section class="skill-category{% if not category.highlight %} lowlight lowlight-no-gradient{% endif %}">
   <h3{% if not category.highlight %} class="lowlight"{% endif %}>{{ category.title }}</h3>
   <ul class="skills">
-    {% for skill in category.skills %}
+    {% for skill in category.skills | sortHighlightsFirst %}
       {% include "components/resume/skill.njk" %}
     {% endfor %}
   </ul>

@@ -41,7 +41,7 @@
   {% endif %}
   {% if role.achievements %}
     <ul class="achievements">
-      {% for achievement in role.achievements %}
+      {% for achievement in role.achievements | sortHighlightsFirst %}
         <li{% if not role.highlight or not achievement.highlight %} class="lowlight"{% endif %}>{{achievement.description | md | safe }}</li>
       {% endfor %}
     </ul>
