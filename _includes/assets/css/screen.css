@@ -93,7 +93,7 @@
   }
 
   .lowlight:not(.lowlight-no-gradient) {
-    background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.1) 50%, transparent 90%);
+    background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 90%);
   }
 
   .show-highlights img, .show-all img, #print img {
