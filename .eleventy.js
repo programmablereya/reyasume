@@ -32,7 +32,7 @@ module.exports = function(eleventyConfig) {
     return Object.assign(Object.create(base), newProperties);
   }
 
-  // Sorts highlights before lowlights, and adds a highlight boolean property.
+  // Identifies highlights in this array.
   //
   // itemList is an array of objects with "id" (string) properties
   // filter is a specification for how to filter this list, which can be:
@@ -50,7 +50,7 @@ module.exports = function(eleventyConfig) {
   // Returns an array of objects, each of which has a one-to-one correspondence
   //   with an input item, using that object as its prototype and adding a
   //   boolean "highlight" property.
-  function identifyHighlights(itemList, filter, highlightsFirst) {
+  function identifyHighlights(itemList, filter) {
     if (!Array.isArray(itemList)) {
       return itemList;
     }
@@ -63,7 +63,7 @@ module.exports = function(eleventyConfig) {
         filter = [];
       }
     }
-    const result = itemList.map(function(item) {
+    return itemList.map(function(item) {
       if ((filter.includes("all")
               && !filter.includes("-" + item.id))
           || filter.includes(item.id)) {
@@ -72,16 +72,10 @@ module.exports = function(eleventyConfig) {
         return inheritAndAdd(item, {highlight: false});
       }
     });
-    if (highlightsFirst) {
-      return result.filter(function(item) { return item.highlight }).concat(result.filter(function(item) { return !item.highlight }));
-    } else {
-      return result;
-    }
   }
   eleventyConfig.addFilter("identifyHighlights", identifyHighlights);
 
-  // Sorts highlights before lowlights for this list and each of the child
-  // layers listed.
+  // Identifies highlights in this and each of the child layers.
   //
   // itemList is an array of objects with
   //    "id" (string) and headAttribute (list of object) properties.
@@ -150,6 +144,11 @@ module.exports = function(eleventyConfig) {
     return highlightList;
   }
   eleventyConfig.addFilter("identifyHighlightsRecursive", identifyHighlightsRecursive);
+
+  function sortHighlightsFirst(itemList) {
+    return itemList.filter((it) => it.highlight).concat(itemList.filter((it) => !it.highlight));
+  }
+  eleventyConfig.addFilter("sortHighlightsFirst", sortHighlightsFirst);
 
   function identifyExperienceHighlights(roleList, filter) {
     const expandedRoleList = roleList.map(function(role) {
