@@ -16,7 +16,7 @@
   }
 
   document.addEventListener("click", function(event) {
-    if (event.target.matches(".show-all, .show-all *")) {
+    if (event.target.matches(".show-all, .show-all *, .highlight-icon, .highlight-icon *")) {
       showAll(event.target);
     } else if (event.target.matches(".show-highlights, .show-highlights *")) {
       showHighlights(event.target);
