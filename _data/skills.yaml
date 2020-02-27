@@ -23,7 +23,7 @@ categories:
     name: JavaScript
     img: skills/code/js.svg
   - id: typescript
-    proficiency: 4
+    proficiency: 5
     name: TypeScript
     img: skills/code/typescript.png
   - id: dart
@@ -82,11 +82,11 @@ categories:
   title: Libraries
   skills:
   - id: angular
-    proficiency: 4
+    proficiency: 3
     name: AngularJS/2/Dart
     img: skills/libraries/angular.svg
   - id: react
-    proficiency: 3
+    proficiency: 4
     name: React
     img: skills/libraries/react.svg
   - id: jquery
