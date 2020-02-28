@@ -68,6 +68,10 @@ roles:
           Solicited experts for BazelCon 2018, coordinated rooms day-of, and
           made office hours work despite last-minute loss of venue. Received a
           peer bonus from the head organizer.
+      - id: jvm-bug
+        description: >
+          Found and fixed a subtle bug in Bazel's test code related to JIT
+          compilation which disappeared when directly tested as a result.
       - id: personal-postmortem
         description: >
           Wrote, gave a talk on, and received a peer bonus for a document
