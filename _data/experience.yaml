@@ -14,7 +14,7 @@ roles:
     description: >
       Primary expert for _configuration trimming_, a major overhaul of Bazel's
       multiplatform support to save time and memory for users by collapsing
-      equivalent nodes in the build graph.
+      equivalent build tasks.
     achievements:
       - id: feature-flags
         description: >
@@ -40,9 +40,9 @@ roles:
           per build and avoiding OOM conditions.
       - id: tagged-trimming-rollout
         description: >
-          Built a fully automated Python-based migration tool for and consulted
-          with users to roll out manual trimming, saving hours of tedious manual
-          corrections per project.
+          Built a fully automated Python migration tool for and consulted
+          with users to roll out manual trimming, saving hours of manual corrections
+          per project.
       - id: auto-trimming
         description: >
           Researched the automatic trimming problem and wrote over 60
@@ -50,9 +50,8 @@ roles:
           [the viability of trimming and the tradeoffs of different options](https://docs.google.com/document/d/1MHq-PKTEhTj7uI185Lm7HSFJK0xSssaY3ZTz7Djq-6A/edit).
       - id: trimming-prototype
         description: >
-          Built a TypeScript/Angular2-based prototype to gather data on the
-          tradeoffs of different trimming algorithms with real builds and
-          integrated a prototype into Bazel.
+          Built a TypeScript/Angular2 prototype to gather data on the
+          tradeoffs of different trimming algorithms with real builds.
       - id: bazel-u
         description: >
           Ran multiple talks for the Bazel team about trimming and feature
@@ -197,8 +196,8 @@ roles:
           accounts set up.
       - id: dartui
         description: >
-          Rewrote the existing hacky Javascript-and-jQuery UI for an internal
-          user in clean, well-tested Dart, allowing for fully automated
+          Rewrote the existing hacky Javascript-and-jQuery UI in clean,
+          well-tested Dart, allowing for fully automated
           push-on-green releases.
       - id: maintenance
         description: >
@@ -232,7 +231,7 @@ roles:
       - id: integration-suite
         description: >
           Built and optimized a full-stack in-memory integration test, cutting
-          time-to-results 75% and allowing integration testing to run in the
+          time-to-results 75% and allowing tests to run in the
           continuous build for instant feedback.
       - id: smoke-tests
         description: >
