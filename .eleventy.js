@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("monthAndYear", function(date) {
-    return date.toLocaleDateString(undefined, {
+    return date.toLocaleDateString("en-US", {
       year: "numeric",
       month: "short"
     });
