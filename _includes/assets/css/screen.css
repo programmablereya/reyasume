@@ -8,15 +8,16 @@
     padding: 0 72px 72px 72px;
     background-color: white;
     margin: 0;
-    border: 1px solid gray;
-    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
+    border: 0.077rem solid gray;
+    border-top: 0;
+    box-shadow: 0.15rem 0.5rem 0.23rem rgba(0, 0, 0, 0.3);
   }
 
   footer {
     display: block;
     font-size: smaller;
     color: white;
-    padding: 10px;
+    padding: 0.77rem;
 		text-shadow: black 1px 1px 1px, black -1px 1px 1px, black 1px -1px 1px, black -1px -1px 1px;
   }
 

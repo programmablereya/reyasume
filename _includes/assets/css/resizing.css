@@ -1,7 +1,7 @@
 /* Too small for big margins */
 @media only screen and (max-width: 700px) and (min-width: 571px) {
   main {
-    padding: 0 calc((100% - 550px) / 2) 72px calc((100vw - 550px) / 2);
+    padding: 0 calc((100vw - 550px) / 2) 72px calc((100vw - 550px) / 2);
   }
 }
 
