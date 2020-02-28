@@ -48,8 +48,10 @@ filter:
       - description
       - integration-suite
       - fun-events
-    agora-games: true
-    star-analytics: true
+    agora-games:
+      - description
+    star-analytics:
+      - description
     misc:
       - description
       - blog

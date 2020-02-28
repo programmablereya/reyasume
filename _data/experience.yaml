@@ -139,8 +139,8 @@ roles:
       - id: mentor
         description: >
           Mentored a new team member in Python and internal release tools,
-          guided him through implementing the redesign and becoming the new
-          expert. Received a peer bonus.
+          guided him in implementing the redesign and becoming the new
+          expert. Got a peer bonus.
   - id: bazel-android
     image: jobs/google/bazel-old.png
     name: Software Engineer # II
