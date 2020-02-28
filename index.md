@@ -20,13 +20,9 @@ filter:
       - git
       - linux
       - bazel
-    engineering:
-      - adaptability
-      - communication
+    engineering: all
     languages: all
   experience:
-    all:
-      - description
     bazel-configurability:
       - description
       - feature-flags
