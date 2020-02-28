@@ -8,7 +8,8 @@
     "watch": "npx cross-env NODE_ICU_DATA=node_modules/full-icu npx eleventy --watch",
     "serve": "npx cross-env NODE_ICU_DATA=node_modules/full-icu npx eleventy --serve",
     "debug": "npx cross-env NODE_ICU_DATA=node_modules/full-icu DEBUG=* npx eleventy",
-    "debug-serve": "npx cross-env NODE_ICU_DATA=node_modules/full-icu DEBUG=* npx eleventy --serve"
+    "debug-serve": "npx cross-env NODE_ICU_DATA=node_modules/full-icu DEBUG=* npx eleventy --serve",
+    "gen": "node bin/gen-resume.js"
   },
   "repository": {
     "type": "git",
