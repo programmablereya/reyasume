@@ -10,12 +10,12 @@ filter:
       - html5
       - python
       - java
-      - kotlin
       - bash
       - ruby
     libraries:
       - angular
       - react
+      - jquery
       - eleventy
       - rails
       - node
