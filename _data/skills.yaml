@@ -46,10 +46,6 @@ categories:
     proficiency: 3
     name: Kotlin
     img: skills/code/kotlin.svg
-  - id: golang
-    proficiency: 3
-    name: Go
-    img: skills/code/golang.svg
   - id: csharp
     proficiency: 3
     name: 'C#'
@@ -62,6 +58,10 @@ categories:
     proficiency: 3
     name: Ruby
     img: skills/code/ruby.svg
+  - id: golang
+    proficiency: 3
+    name: Go
+    img: skills/code/golang.svg
   - id: cplusplus
     proficiency: 2
     name: C/C++
