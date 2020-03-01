@@ -66,6 +66,10 @@ categories:
     proficiency: 2
     name: C/C++
     img: skills/code/cpp.svg
+  - id: rust
+    proficiency: 0
+    name: Rust
+    img: skills/code/rust.svg
   - id: php
     proficiency: 1
     name: PHP
