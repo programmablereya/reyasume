@@ -123,8 +123,12 @@ categories:
     img: skills/libraries/postgres.svg
   - id: appengine
     proficiency: 3
-    name: App Engine/Datastore
+    name: AppEngine
     img: skills/libraries/appengine.png
+  - id: mongodb
+    proficiency: 1
+    name: MongoDB
+    img: skills/libraries/mongodb.png
 - id: tools
   title: Tools
   skills:
