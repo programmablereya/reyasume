@@ -129,6 +129,10 @@ categories:
     proficiency: 1
     name: MongoDB
     img: skills/libraries/mongodb.png
+  - id: firebase
+    proficiency: 4
+    name: Firebase
+    img: skills/libraries/firebase.svg
 - id: tools
   title: Tools
   skills:

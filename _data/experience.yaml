@@ -122,6 +122,10 @@ roles:
           Consulted with sheriffs and acted as a go-to backup sheriff during
           especially difficult situations. Received 4 peer bonuses for different
           key moments of help.
+      - id: cloudboard
+        description: >
+          Built a web-clipboard Chrome extension with a Firebase backend
+          for a Google Cloud project contest.
       - id: redesign
         description: >
           Designed a new version of the release process using more modern
