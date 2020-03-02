@@ -121,6 +121,10 @@ categories:
     proficiency: 4
     name: PostgreSQL
     img: skills/libraries/postgres.svg
+  - id: appengine
+    proficiency: 3
+    name: App Engine/Datastore
+    img: skills/libraries/appengine.png
 - id: tools
   title: Tools
   skills:

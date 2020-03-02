@@ -195,7 +195,7 @@ roles:
     achievements:
       - id: wallet-profile
         description: >
-          Installed a new account template on the account creation service,
+          Built a new account template service on the App Engine backend,
           allowing users to create Google accounts which already had Wallet
           accounts set up.
       - id: dartui
