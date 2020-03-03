@@ -295,6 +295,10 @@ roles:
           Built Python [Anki plugins](https://github.com/programmablereya/wani-anki)
           to ease my Japanese study, synchronizing learned kanji from WaniKani
           and enabling one-click swapping of fields in downloaded cards.
+      - id: tichu-tournament
+        description: >
+          Built an Angular2 front-end for [a tournament scoring webapp](https://github.com/aragos/tichu-tournament)
+          for the card game Tichu.
       - id: discord
         description: >
           Built an extensible Kotlin-based Discord chatbot for playing Codenames
