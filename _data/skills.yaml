@@ -93,6 +93,10 @@ categories:
     proficiency: 4
     name: React
     img: skills/libraries/react.svg
+  - id: vue
+    proficiency: 0
+    name: Vue.js
+    img: skills/libraries/vue.png
   - id: jquery
     proficiency: 2
     name: JQuery
