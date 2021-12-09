@@ -23,11 +23,11 @@ categories:
     name: JavaScript
     img: skills/code/js.svg
   - id: typescript
-    proficiency: 5
+    proficiency: 6
     name: TypeScript
     img: skills/code/typescript.png
   - id: dart
-    proficiency: 4
+    proficiency: 3
     name: Dart
     img: skills/code/dart.svg
   - id: html5
