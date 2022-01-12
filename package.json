@@ -29,7 +29,7 @@
     "html-minifier": "^4.0.0",
     "intl": "^1.2.5",
     "js-yaml": "^3.13.1",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "npx": "^10.2.0",
     "uglify-es": "^3.3.9"
   }
